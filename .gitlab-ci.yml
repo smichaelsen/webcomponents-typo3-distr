@@ -47,7 +47,7 @@ build:php:
     expire_in: '2h'
   only:
     - tags
-    - master
+    - main
 
 # compile and build JS / CSS
 # should be used in conjunction with an artifact
