@@ -1,0 +1,32 @@
+<?php
+
+declare(strict_types=1);
+
+namespace B13\FaqT3demo\RecordList;
+
+/*
+ * This file is part of TYPO3 CMS-based extension "faq_t3demo" by b13.
+ *
+ * It is free software; you can redistribute it and/or modify it under
+ * the terms of the GNU General Public License, either version 2
+ * of the License, or any later version.
+ */
+
+class DatabaseRecordList extends \TYPO3\CMS\Recordlist\RecordList\DatabaseRecordList
+{
+    /**
+     * Rendering the header row for a table
+     *
+     * @param string $table Table name
+     * @param int[] $currentIdList Array of the currently displayed uids of the table
+     * @throws \UnexpectedValueException
+     * @return string Header table row
+     * @internal
+     * @see getTable()
+     */
+    public function renderListHeader($table, $currentIdList)
+    {
+        // empty head
+        return '<thead></thead>';
+    }
+}

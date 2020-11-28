@@ -1,0 +1,6 @@
+mod.wizards.newContentElement.wizardItems.common.elements.contentstage {
+  title = LLL:EXT:site_t3demo/Resources/Private/Language/locallang_db.xlf:CType.contentstage.name
+  description = LLL:EXT:site_t3demo/Resources/Private/Language/locallang_db.xlf:CType.contentstage.description
+  tt_content_defValues.CType = contentstage
+  iconIdentifier = content-image
+}

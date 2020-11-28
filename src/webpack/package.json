@@ -1,0 +1,57 @@
+{
+  "name": "demo.typo3.org",
+  "description": "demo.typo3.org Site Package Setup",
+  "private": true,
+  "version": "1.0.0",
+  "engines": {
+    "node": "^12.19",
+    "yarn": "^1.13.0"
+  },
+  "author": {
+    "name": "b13 GmbH",
+    "email": "typo3@b13.com",
+    "url": "https://b13.com/"
+  },
+  "scripts": {
+    "build-scss": "node config/scssBuild.js --env site_t3demo",
+    "build-webpack-dev": "webpack --mode development --config config/webpack.config.js --progress --env site_t3demo",
+    "build-webpack-prod": "webpack --mode production --config config/webpack.config.js --progress --env site_t3demo",
+    "build-dev": "yarn build-scss && yarn build-webpack-dev",
+    "build-prod": "yarn build-scss && yarn build-webpack-prod",
+    "watch-main-css": "./node_modules/node-sass/bin/node-sass -w ../extensions/site_t3demo/Resources/Private/Scss/main.scss -o ../extensions/site_t3demo/Resources/Public/Css/",
+    "hmr": "webpack-dev-server --public 127.0.0.1:8080 --watch-poll --mode development --config config/webpack.config.hmr.js --env site_t3demo"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "not dead"
+  ],
+  "dependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "autoprefixer": "^9.7.4",
+    "babel-loader": "^8.0.6",
+    "babel-runtime": "^6.26.0",
+    "chalk": "^3.0.0",
+    "compression-webpack-plugin": "^6.1.0",
+    "css-loader": "^3.4.2",
+    "css-mqpacker": "^7.0.0",
+    "cssnano": "^4.1.10",
+    "cssstats": "^3.4.1",
+    "event-hooks-webpack-plugin": "^2.1.5",
+    "fs": "^0.0.1-security",
+    "node-sass": "^4.13.1",
+    "path": "^0.12.7",
+    "postcss": "^7.0.27",
+    "sass-loader": "^8.0.2",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-merge": "^4.2.2"
+  },
+  "devDependencies": {
+    "sass-lint": "^1.13.1",
+    "sass-lint-config": "https://code.b13.com/public-projects/sass-lint-config.git",
+    "webpack-dev-server": "^3.1.4"
+  }
+}

@@ -1,0 +1,4 @@
+Resources/Public/Css/
+Resources/Public/Backend/Css/Skin/
+Resources/Public/JavaScript/*
+!Resources/Public/JavaScript/Backend

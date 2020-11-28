@@ -1,0 +1,20 @@
+@import 'EXT:fluid_styled_content/Configuration/TypoScript/constants.typoscript'
+@import 'EXT:seo/Configuration/TypoScript/XmlSitemap/constants.typoscript'
+
+pages {
+  startpage = 1
+  privacy = 9
+  login = 16
+  profileLinks = 11
+  footerMenu = 6
+  faqFolder = 36
+}
+
+b13.snippetRootPath = EXT:site_t3demo/Resources/Private/Snippet
+
+# fluid_styled_content
+styles.templates {
+  templateRootPath = EXT:site_t3demo/Resources/Private/Contenttypes/Templates
+  layoutRootPath = EXT:site_t3demo/Resources/Private/Contenttypes/Layouts
+  partialRootPath = EXT:site_t3demo/Resources/Private/Contenttypes/Partials
+}

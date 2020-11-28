@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file>
+		<header>
+			<description>Language Labels for EXT:site_t3demo frontend templates</description>
+			<authorName>David Steeb</authorName>
+			<authorEmail>typo3@b13.com</authorEmail>
+		</header>
+		<body>
+			<trans-unit id="login.login" res_name="login.login">
+				<source>Log In</source>
+			</trans-unit>
+			<trans-unit id="login.logout" res_name="login.logout">
+				<source>Log Out</source>
+			</trans-unit>
+			<trans-unit id="mobile-menu-back" res_name="mobile-menu-back">
+				<source>Back</source>
+			</trans-unit>
+			<trans-unit id="resetbanner.text" res_name="resettext">
+				<source>Next Server Reset</source>
+			</trans-unit>
+			<trans-unit id="resetbanner.timeunit" res_name="resetbanner.timeunit">
+				<source>min.</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

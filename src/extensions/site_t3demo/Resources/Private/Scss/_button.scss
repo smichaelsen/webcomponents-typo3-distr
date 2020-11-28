@@ -1,0 +1,25 @@
+.b_button {
+	height: 36px;
+	line-height: 34px;
+	display: inline-block;
+	background: $color-primary;
+	border: 1px solid $color-primary;
+	color: $color-white;
+	border-radius: 8px;
+	padding: 0 16px;
+	&:hover {
+		text-decoration: none;
+		background: $color-primary-dark;
+		border-color: $color-primary-dark
+	}
+	&--secondary {
+		background: transparent;
+		border-color: $color-black;
+		color: $color-black;
+		&:hover {
+			color: $color-primary;
+			border-color: $color-primary;
+			background: transparent;
+		}
+	}
+}

@@ -1,0 +1,6 @@
+mod.wizards.newContentElement.wizardItems.special.elements.footerinfo {
+  title = LLL:EXT:site_t3demo/Resources/Private/Language/locallang_db.xlf:CType.footerinfo.name
+  description = LLL:EXT:site_t3demo/Resources/Private/Language/locallang_db.xlf:CType.footerinfo.description
+  tt_content_defValues.CType = footerinfo
+  iconIdentifier = content-info
+}

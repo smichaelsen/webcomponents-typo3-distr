@@ -1,0 +1,8 @@
+@mixin teaserhover($linkclass) {
+	transition: transform 0.5s linear;
+	transform: scale(1);
+	transform-origin: center center;
+	#{$linkclass}:hover & {
+		transform: scale(1.06);
+	}
+}

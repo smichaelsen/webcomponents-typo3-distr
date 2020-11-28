@@ -1,0 +1,6 @@
+mod.wizards.newContentElement.wizardItems.common.elements.lead {
+  title = LLL:EXT:site_t3demo/Resources/Private/Language/locallang_db.xlf:CType.lead.name
+  description = LLL:EXT:site_t3demo/Resources/Private/Language/locallang_db.xlf:CType.lead.description
+  tt_content_defValues.CType = lead
+  iconIdentifier = content-header
+}

@@ -1,0 +1,111 @@
+stages:
+  - lint
+  - build
+  - build-frontend
+  - deploy
+
+variables:
+  ssh_hosts: "demo01.typo3server.ch"
+  build_frontend_path: "src/webpack"
+  # see https://getcomposer.org/doc/03-cli.md#composer-cache-dir
+  COMPOSER_CACHE_DIR: ".composer-cache"
+  composer_options:  "--no-progress --no-interaction"
+
+# These files/folders are untracked, but should be kept between stages
+cache:
+  key: composer-cache-files
+  paths:
+    - "$COMPOSER_CACHE_DIR"
+    - "$build_frontend_path/node_modules"
+
+# Runs tests, currently it runs phpstan + php-cs-fixer
+code-analysis:php:
+  stage: lint
+  image: composer:2
+  before_script:
+    - composer install --ignore-platform-reqs $composer_options
+  script:
+    - if [ -e bin/phpstan ]; then php -d memory_limit=2G ./bin/phpstan analyse; fi
+    - if [ -e bin/php-cs-fixer ]; then php -d memory_limit=2G ./bin/php-cs-fixer fix --config=.php_cs -v --dry-run --stop-on-violation --using-cache=no; fi
+
+
+# Builds the artifacts for the production system (composer first)
+build:php:
+  stage: build
+  image: composer:2
+  script:
+    - composer install --no-dev -o -a --ignore-platform-reqs $composer_options
+  artifacts:
+    paths:
+      - bin
+      - web
+      - src
+      - config
+      - vendor
+      # needed to have the deployer tool available
+      - build
+    expire_in: '2h'
+  only:
+    - tags
+    - master
+
+# compile and build JS / CSS
+# should be used in conjunction with an artifact
+.frontend_bootstrap: &frontend-bootstrap
+  image: node:12.19-buster
+  variables:
+    node_path: src/webpack
+  script:
+    - cd $build_frontend_path
+    - yarn install
+    - yarn build-prod
+
+# rsyncs the artifacts to the target server via deployer
+.deploy: &deploy
+  image: composer:2
+  variables:
+    # no git needed, only the artifacts are required
+    GIT_STRATEGY: "none"
+    TARGET_HOSTS: ""
+  before_script:
+    - apk add rsync --update
+    - eval $(ssh-agent -s)
+    - echo -e "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+    - mkdir -p ~/.ssh && chmod 700 ~/.ssh
+    - ssh-keyscan "$ssh_hosts" >> ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+  script:
+    - composer global require deployer/deployer deployer/recipes --dev $composer_options
+    - /tmp/vendor/bin/dep --file=./build/deploy.php deploy -vv --hosts=${TARGET_HOSTS}
+
+
+# In the future, it would be great if this build step could run at the same time as the PHP build, which is not possible
+# due to some dependencies from composer
+build-frontend:
+  <<: *frontend-bootstrap
+  stage: build-frontend
+  artifacts:
+    paths:
+      - src/extensions
+      - web
+    expire_in: '2h'
+  only:
+    - tags
+    - master
+
+deploy:production:
+  <<: *deploy
+  stage: deploy
+  variables:
+    TARGET_HOSTS: "main,contentmaster"
+  only:
+    - tags
+    - master
+
+deploy:staging:
+  <<: *deploy
+  stage: deploy
+  variables:
+    TARGET_HOSTS: "staging"
+  only:
+    - develop

@@ -1,0 +1,17 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  B13\SiteT3demo\:
+    resource: '../Classes/*'
+
+  B13\SiteT3demo\Command\StartSyncCommand:
+    tags:
+      - name: 'console.command'
+        command: 'typo3demo:checkSync'
+        schedulable: true
+
+  B13\SiteT3demo\Backend\ToolbarItems\TimerToolbarItem:
+    public: true

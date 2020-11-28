@@ -1,0 +1,59 @@
+@import 'EXT:site_t3demo/Configuration/TypoScript/Setup/baseconfig.typoscript'
+
+@import 'EXT:seo/Configuration/TypoScript/XmlSitemap/setup.typoscript'
+
+@import 'EXT:site_t3demo/Configuration/TypoScript/Setup/lib.fluidPage.typoscript'
+@import 'EXT:site_t3demo/Configuration/TypoScript/Setup/lib.parseFunc_RTE.typoscript'
+@import 'EXT:site_t3demo/Configuration/TypoScript/Setup/plugin.tx_assetcollector.typoscript'
+@import 'EXT:site_t3demo/Configuration/TypoScript/Setup/plugin.tx_picture.typoscript'
+@import 'EXT:site_t3demo/Configuration/TypoScript/Setup/tt_content.faqlist.typoscript'
+
+
+page = PAGE
+page {
+
+  meta.viewport = width=device-width, initial-scale=1.0
+
+  includeCSS.main = EXT:site_t3demo/Resources/Public/Css/main.css
+
+  footerData.10 = TEXT
+  footerData.10.value (
+    <script src="https://typo3.azureedge.net/typo3infrastructure/universe/dist/webcomponents-loader.js" async></script>
+    <script type="module" src="https://typo3.azureedge.net/typo3infrastructure/universe/dist/typo3-universe.js" async></script>
+  )
+
+  includeJSFooter.main = EXT:site_t3demo/Resources/Public/JavaScript/main.js
+  includeJSFooter.main.type = module
+
+  headerData.10 = FLUIDTEMPLATE
+  headerData.10 {
+    templateName = HeaderData
+    templateRootPaths.0 = EXT:site_t3demo/Resources/Private/Pages/HeaderData/Templates
+    partialRootPaths.0 = EXT:site_t3demo/Resources/Private/Pages/HeaderData/Partials
+  }
+
+  10 = CASE
+  10.key.data = pagelayout
+  10 {
+    default =< lib.fluidPage
+  }
+
+}
+
+
+timer = PAGE
+timer {
+  typeNum = 1603464133342
+  config {
+    debug = 0
+    disableAllHeaderCode = 1
+    additionalHeaders {
+      10 {
+        header = Content-Type: application/json
+        replace = 1
+      }
+    }
+  }
+  10 = USER_INT
+  10.userFunc = B13\SiteT3demo\Serverreset->nextServerReset
+}

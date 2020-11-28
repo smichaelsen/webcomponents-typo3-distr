@@ -1,0 +1,32 @@
+.b_langswitch {
+	display: inline;
+	padding: 0 15px;
+	margin: 0;
+	&__item {
+		display: inline-block;
+		line-height: $line-height-meta-menu;
+	}
+	&__link {
+		line-height: 48px;
+		height: 48px;
+		min-width: 32px;
+		display: inline-block;
+		color: $color-gray-light;
+		&--active {
+			color: $color-black;
+		}
+		&:hover {
+			color: $color-primary;
+			text-decoration: none;
+		}
+	}
+}
+
+@mixin langswitch-lg {
+	.b_langswitch {
+		padding: 0 8px;
+		&__item {
+			line-height: inherit;;
+		}
+	}
+}
