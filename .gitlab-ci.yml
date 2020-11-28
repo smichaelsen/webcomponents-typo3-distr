@@ -91,7 +91,7 @@ build-frontend:
     expire_in: '2h'
   only:
     - tags
-    - master
+    - main
 
 deploy:production:
   <<: *deploy
@@ -100,7 +100,7 @@ deploy:production:
     TARGET_HOSTS: "main,contentmaster"
   only:
     - tags
-    - master
+    - main
 
 deploy:staging:
   <<: *deploy
