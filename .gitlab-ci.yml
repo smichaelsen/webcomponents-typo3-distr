@@ -86,8 +86,13 @@ build-frontend:
   stage: build-frontend
   artifacts:
     paths:
-      - src/extensions
+      - bin
       - web
+      - src
+      - config
+      - vendor
+      # needed to have the deployer tool available
+      - build
     expire_in: '2h'
   only:
     - tags
