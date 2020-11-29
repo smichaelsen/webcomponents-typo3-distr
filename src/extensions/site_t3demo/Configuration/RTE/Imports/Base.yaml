@@ -5,7 +5,7 @@ imports:
 
 editor:
   config:
-    contentsCss: "EXT:site_b13/Resources/Public/Css/be_rte.css"
+    contentsCss: "EXT:site_t3demo/Resources/Public/Backend/Css/be_rte.css"
 
     autoParagraph: false
     fillEmptyBlocks: false
