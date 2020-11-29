@@ -12,6 +12,7 @@ module.exports = {
 		files: {
 			[`${relCssPath}/main.css`]: `${relScssPath}/main.scss`,
 			[`${relCssPath}/faqlist.css`]: `${relScssPath}/faqlist.scss`,
+			[`${relCssPath}/../Backend/Css/be_rte.css`]: `${relScssPath}/be_rte.scss`,
 			[`${relCssPath}/../Backend/Css/Skin/t3skin_override.css`]: `${relScssPath}/t3skin_override.scss`
 		},
 		// Group same CSS media query rules into one
