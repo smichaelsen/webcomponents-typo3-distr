@@ -65,7 +65,7 @@ build:php:
   image: composer:2
   variables:
     # no git needed, only the artifacts are required
-    GIT_STRATEGY: "none"
+    GIT_STRATEGY: none
     TARGET_HOSTS: ""
   before_script:
     - apk add rsync --update
@@ -106,6 +106,8 @@ deploy:production:
   only:
     - tags
     - main
+  dependencies:
+    - build-frontend
 
 deploy:staging:
   <<: *deploy
