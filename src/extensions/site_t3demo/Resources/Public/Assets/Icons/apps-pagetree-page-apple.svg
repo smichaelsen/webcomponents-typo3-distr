@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#EFEFEF;}
-	.st1{opacity:0.65;fill:#FFFFFF;enable-background:new    ;}
-	.st2{opacity:0.2;enable-background:new    ;}
-	.st3{fill:#999999;}
-	.st4{fill:#666666;}
-	.st5{fill:#FFFFFF;}
+	.b_st-a0{fill:#EFEFEF;}
+	.b_st-a1{opacity:0.65;fill:#FFFFFF;enable-background:new;}
+	.b_st-a2{opacity:0.2;enable-background:new;}
+	.b_st-a3{fill:#999999;}
+	.b_st-a4{fill:#666666;}
+	.b_st-a5{fill:#FFFFFF;}
 </style>
-<path class="st0" d="M2,0v16h12V4l-4-4H2z"/>
-<path class="st1" d="M10,4V0l4,4H10z"/>
-<path class="st1" d="M10,4V0l4,4H10z"/>
-<path class="st2" d="M13,5v5L9,5H13z"/>
-<path class="st3" d="M2,0v16h12V4l0,0l0,0l-4-4l0,0l0,0H2z M3,1h6v4h4v10H3V1z M10,1.4L12.6,4H10V1.4z"/>
-<path class="st4" d="M5,5h11v11H5V5z"/>
-<g id="Ebene_2_1_">
+<path class="b_st-a0" d="M2,0v16h12V4l-4-4H2z"/>
+<path class="b_st-a1" d="M10,4V0l4,4H10z"/>
+<path class="b_st-a1" d="M10,4V0l4,4H10z"/>
+<path class="b_st-a2" d="M13,5v5L9,5H13z"/>
+<path class="b_st-a3" d="M2,0v16h12V4l0,0l0,0l-4-4l0,0l0,0H2z M3,1h6v4h4v10H3V1z M10,1.4L12.6,4H10V1.4z"/>
+<path class="b_st-a4" d="M5,5h11v11H5V5z"/>
+<g>
 </g>
-<path class="st5" d="M6,6h9v9H6V6z"/>
+<path class="b_st-a5" d="M6,6h9v9H6V6z"/>
 <path d="M12.8,8.5c-0.7-0.3-1.5-0.1-2.1,0.4c0-0.1,0-0.1,0-0.2C10.8,8.5,10.9,8.2,11,8c0.1-0.3,0.2-0.5,0.3-0.8L10.7,7
 	c-0.1,0.3-0.1,0.6-0.2,0.8c0,0.3-0.1,0.6-0.1,0.8c0,0.1,0,0.2,0,0.2C9.7,8.4,8.9,8.2,8.2,8.5C7.1,9,6.6,10.6,7.2,12s2,2.3,3.2,1.8
 	c0,0,0.1,0,0.1,0s0.1,0,0.1,0c1.2,0.5,2.6-0.3,3.2-1.8S13.9,9,12.8,8.5z M13.2,11.8c-0.2,0.6-0.6,1-1.1,1.3
