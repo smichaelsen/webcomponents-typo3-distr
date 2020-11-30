@@ -47,6 +47,7 @@
 		"typo3/cms-dashboard": "^10.4",
 		"typo3/cms-extbase": "^10.4",
 		"typo3/cms-extensionmanager": "^10.4",
+		"typo3/cms-felogin": "^10.4",
 		"typo3/cms-filelist": "^10.4",
 		"typo3/cms-filemetadata": "^10.4",
 		"typo3/cms-fluid": "^10.4",
