@@ -20,6 +20,7 @@
 		overflow: hidden;
 		line-height: 1px;
 		margin-bottom: 10px;
+		@include teasercontainer-safarifix();
 	}
 	&__image {
 		width: 100%;
