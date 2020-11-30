@@ -15,6 +15,7 @@ namespace B13\SiteT3demo\Service;
 use TYPO3\CMS\Core\Database\ConnectionPool;
 use TYPO3\CMS\Core\Database\Query\QueryBuilder;
 use TYPO3\CMS\Core\Database\Query\Restriction\DeletedRestriction;
+use TYPO3\CMS\Core\Database\Query\Restriction\HiddenRestriction;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 class FilereferenceService
@@ -57,6 +58,25 @@ class FilereferenceService
                 ->fetchAll();
             $references[$key]['originalFileMetaData'] = $originalFileMetaData[0];
         }
+        return $references;
+    }
+
+    public static function countNumberOfVisibleFilereferences($field, $table, $uid)
+    {
+        $queryBuilder = self::getQueryBuilder('sys_file_reference');
+        $queryBuilder->getRestrictions()
+            ->add(GeneralUtility::makeInstance(HiddenRestriction::class));
+        $references = $queryBuilder
+            ->count('uid')
+            ->from('sys_file_reference')
+            ->orderBy('sorting_foreign')
+            ->where(
+                $queryBuilder->expr()->eq('uid_foreign', $queryBuilder->createNamedParameter($uid, \PDO::PARAM_INT)),
+                $queryBuilder->expr()->eq('tablenames', $queryBuilder->createNamedParameter($table)),
+                $queryBuilder->expr()->eq('fieldname', $queryBuilder->createNamedParameter($field))
+            )
+            ->execute()
+            ->fetchColumn();
         return $references;
     }
 
