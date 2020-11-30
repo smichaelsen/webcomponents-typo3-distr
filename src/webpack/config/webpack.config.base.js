@@ -24,8 +24,7 @@ module.exports = (config) => ({
 					loader : 'babel-loader',
 					options: {
 						presets: ['@babel/preset-env'],
-						// disable plugin for now
-						//plugins: ['@babel/plugin-transform-runtime']
+						plugins: ['@babel/plugin-transform-runtime']
 					}
 				}
 			},
