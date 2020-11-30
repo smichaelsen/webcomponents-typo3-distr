@@ -1,5 +1,6 @@
 @import 'EXT:fluid_styled_content/Configuration/TypoScript/constants.typoscript'
 @import 'EXT:seo/Configuration/TypoScript/XmlSitemap/constants.typoscript'
+@import 'EXT:felogin/Configuration/TypoScript/constants.typoscript'
 
 pages {
   startpage = 1
