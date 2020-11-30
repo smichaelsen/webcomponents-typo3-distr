@@ -1,5 +1,8 @@
 .b_footer {
-	margin-top: $content-spacing-l;
+	margin-top: auto;
+	display: flex;
+	flex-direction: column;
+	padding-top: $content-spacing-l;
 	&__top {
 		position: relative;
 	}
@@ -14,7 +17,7 @@
 
 @mixin footer-lg {
 	.b_footer {
-		margin-top: $content-spacing-xl;
+		padding-top: $content-spacing-xl;
 		&__top {
 			max-width: 480px;
 			margin-inline-start: auto;
