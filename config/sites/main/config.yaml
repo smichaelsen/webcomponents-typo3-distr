@@ -35,7 +35,7 @@ languages:
   -
     title: German
     enabled: true
-    languageId: '1'
+    languageId: 1
     base: /de/
     typo3Language: de
     locale: de_DE.utf8

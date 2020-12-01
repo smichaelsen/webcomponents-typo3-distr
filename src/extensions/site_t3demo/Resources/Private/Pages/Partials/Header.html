@@ -39,13 +39,13 @@
 							<ac:svg name="arrow-right" class="b_navi__icon b_navi__icon--after" />
 						</label>
 					</f:if>
-					<a href="{item.slug}" class="b_navi__link {f:if(condition: item.isInRootLine, then: 'b_navi__link--active')}">
+					<f:link.typolink parameter="{item.uid}" class="b_navi__link {f:if(condition: item.isInRootLine, then: 'b_navi__link--active')}">
 						<span>{item.nav_title}</span>
 						<f:if condition="{item.subpages}">
 							<ac:svg name="arrow-down" class="b_navi__icon b_navi__icon--after b_navi__icon--closed" />
 							<ac:svg name="arrow-up" class="b_navi__icon b_navi__icon--after b_navi__icon--opened" />
 						</f:if>
-					</a>
+					</f:link.typolink>
 					<f:if condition="{item.subpages}">
 						<div class="b_navi__submenu">
 							<ul class="b_navi__sublist b_navi__sublist--contentcontainer">
