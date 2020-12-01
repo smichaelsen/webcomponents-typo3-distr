@@ -56,12 +56,15 @@ class DrawItemDefault implements PageLayoutViewDrawItemHookInterface
         // return all sys_file_reference rows
         if ($row['assets']) {
             $row['allAssets'] = \B13\SiteT3demo\Service\FilereferenceService::resolveFilereferences('assets', 'tt_content', $row['uid']);
+            $row['allAssets-numberOfVisibleItems'] = \B13\SiteT3demo\Service\FilereferenceService::countNumberOfVisibleFilereferences('assets', 'tt_content', $row['uid']);
         }
         if ($row['media']) {
             $row['allMedia'] = \B13\SiteT3demo\Service\FilereferenceService::resolveFilereferences('media', 'tt_content', $row['uid']);
+            $row['allMedia-numberOfVisibleItems'] = \B13\SiteT3demo\Service\FilereferenceService::countNumberOfVisibleFilereferences('media', 'tt_content', $row['uid']);
         }
         if ($row['image']) {
             $row['allImages'] = \B13\SiteT3demo\Service\FilereferenceService::resolveFilereferences('image', 'tt_content', $row['uid']);
+            $row['allImages-numberOfVisibleItems'] = \B13\SiteT3demo\Service\FilereferenceService::countNumberOfVisibleFilereferences('image', 'tt_content', $row['uid']);
         }
     }
 

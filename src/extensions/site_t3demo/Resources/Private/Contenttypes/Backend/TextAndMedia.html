@@ -5,37 +5,22 @@
 <a href="{editLink.url -> f:format.raw()}" title="{editLink.title}">
 	<strong><f:translate key="LLL:EXT:site_t3demo/Resources/Private/Language/locallang_db.xlf:CType.textmedia.name" /></strong><br>
 
-	<f:if condition="{allAssets}">
-		<f:variable name="numberOfMediaAssets" value="{allAssets -> f:count()}" />
-				<f:variable name="numberOfVisibleAssets" value="0" />
-		<f:for each="{allAssets}" as="media">
-			<f:if condition="!{media.hidden}">
-				<f:variable name="mediaIsVisible" value="true" />
-				<f:variable name="numberOfVisibleAssets" value="{numberOfVisibleAssets + 1}" />
-			</f:if>
-			<span class="b_ce__thumbnail-wrapper {f:if(condition: '{numberOfMediaAssets} > 1', else: 'b_ce__thumbnail-wrapper--single')}">
-				<f:image src="{media.uid}" height="64" treatIdAsReference="1"
-								 class="b_ce__thumbnail {f:if(condition:image.hidden, then: 'b_ce__thumbnail--hidden')}" /><br>
-			</span>
-		</f:for>
-	</f:if>
+	<f:for each="{allAssets}" as="media">
+		<span class="b_ce__thumbnail-wrapper {f:if(condition: '{allAssets-numberOfVisibleItems} > 1', else: 'b_ce__thumbnail-wrapper--single')}">
+			<f:image src="{media.uid}" height="64" treatIdAsReference="1"
+							 class="b_ce__thumbnail {f:if(condition:image.hidden, then: 'b_ce__thumbnail--hidden')}" /><br>
+		</span>
+	</f:for>
 
 	<f:if condition="{bodytext}">
 		<br>
 		{bodytext -> f:format.raw()}
 	</f:if>
 
-	<f:if condition="!{mediaIsVisible} && !{hidden}">
-		<p><strong class="b_ce__warning"><core:icon identifier="exclamation-circle" size="small" />
-			<f:translate key="LLL:EXT:site_t3demo/Resources/Private/Language/locallang_db.xlf:pageLayoutView.noAssetVisible" /></strong></p>
-	</f:if>
-
-	<f:if condition="{numberOfVisibleAssets} > 1  && !{hidden}">
+	<f:if condition="{allAssets-numberOfVisibleItems} > 1  && !{hidden}">
 		<p><strong class="b_ce__warning"><core:icon identifier="exclamation-circle" size="small" />
 			<f:translate key="LLL:EXT:site_t3demo/Resources/Private/Language/locallang_db.xlf:pageLayoutView.onlyFirstAssetInUse" /></strong></p>
 	</f:if>
 
 </a>
 </html>
-
-
