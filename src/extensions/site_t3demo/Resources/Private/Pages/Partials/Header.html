@@ -79,7 +79,18 @@
 				<ul class="b_langswitch">
 					<f:for each="{languageMenu}" as="item">
 						<li class="b_langswitch__item">
-							<a href="{item.link}" class="b_langswitch__link {f:if(condition: item.active, then: 'b_langswitch__link--active')}">{item.navigationTitle}</a>
+							<f:if condition="{item.available}">
+								<f:then>
+									<a href="{item.link}" class="b_langswitch__link {f:if(condition: item.active, then: 'b_langswitch__link--active')}">{item.navigationTitle}</a>
+								</f:then>
+								<f:else>
+									<f:link.typolink
+										parameter="{startpage.0.data.uid}"
+										class="b_langswitch__link {f:if(condition: item.active, then: 'b_langswitch__link--active')}"
+										language="{item.languageId}"
+									>{item.navigationTitle}</f:link.typolink>
+								</f:else>
+							</f:if>
 						</li>
 					</f:for>
 				</ul>
