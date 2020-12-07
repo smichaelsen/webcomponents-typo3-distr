@@ -9,15 +9,15 @@ The demo project is a fictitious informational website about apples. It acts as
 a example website for people who never worked with TYPO3, and want to play around
 with the TYPO3 Administration Interface (= TYPO3 Backend).
 
-A special demo login allows to create custom one-time editors without any password.
+A special demo login allows creating custom one-time editors without any password.
 
-As soon as one backend user signs into TYPO3 Backend, a counter is shown both on the website
+As soon as one backend user signs in to the TYPO3 Backend, a counter is shown both on the website
 and on the TYPO3 Backend that within 30 minutes, the TYPO3 installation will be re-set
 to the current state.
 
 ## License
 
-All code is licensed under GPL2+. All content, and graphical creations are licensed under
+All code is licensed under GPL2+. All content and graphical creations are licensed under
 the Creative Commons license.
 
 ## Credits
