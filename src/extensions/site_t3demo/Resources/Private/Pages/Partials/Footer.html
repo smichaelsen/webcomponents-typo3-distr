@@ -31,9 +31,9 @@
 			<ul class="b_footernavi">
 				<f:for each="{footerMenu}" as="item">
 					<li class="b_footernavi__item">
-						<a href="{item.slug}" class="b_footernavi__link">
+						<f:link.typolink parameter="{item.uid}" class="b_footernavi__link">
 							{item.nav_title}
-						</a>
+						</f:link.typolink>
 					</li>
 				</f:for>
 			</ul>
