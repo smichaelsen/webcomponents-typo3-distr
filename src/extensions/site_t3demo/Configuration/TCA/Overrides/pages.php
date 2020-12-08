@@ -8,6 +8,7 @@ ExtensionManagementUtility::addTCAcolumns('pages', [
         'l10n_mode' => 'exclude',
         'l10n_display' => 'defaultAsReadonly',
         'label' => 'LLL:EXT:site_t3demo/Resources/Private/Language/locallang_db.xlf:pages.infotext_header',
+        'exclude' => 1,
         'config' => [
             'type' => 'input',
             'size' => 50,
@@ -18,6 +19,7 @@ ExtensionManagementUtility::addTCAcolumns('pages', [
         'l10n_mode' => 'exclude',
         'l10n_display' => 'defaultAsReadonly',
         'label' => 'LLL:EXT:site_t3demo/Resources/Private/Language/locallang_db.xlf:pages.infotext',
+        'exclude' => 1,
         'description' => 'LLL:EXT:site_t3demo/Resources/Private/Language/locallang_db.xlf:pages.infotext.description',
         'config' => [
             'type' => 'text',
