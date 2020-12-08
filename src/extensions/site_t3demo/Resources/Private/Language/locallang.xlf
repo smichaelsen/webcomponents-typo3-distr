@@ -16,7 +16,7 @@
 			<trans-unit id="mobile-menu-back" res_name="mobile-menu-back">
 				<source>Back</source>
 			</trans-unit>
-			<trans-unit id="resetbanner.text" res_name="resettext">
+			<trans-unit id="resetbanner.text" res_name="resetbanner.text">
 				<source>Next Server Reset</source>
 			</trans-unit>
 			<trans-unit id="resetbanner.timeunit" res_name="resetbanner.timeunit">
