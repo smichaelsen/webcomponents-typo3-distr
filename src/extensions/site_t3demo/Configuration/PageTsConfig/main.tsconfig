@@ -31,3 +31,8 @@ TCEMAIN.translateToMessage >
 
 TCEMAIN.table.pages.disablePrependAtCopy = 1
 TCEMAIN.table.tt_content.disablePrependAtCopy = 1
+
+# clear cache for faqs when editing something in the faq sys folder
+[page["uid"] == 36]
+TCEMAIN.clearCacheCmd = cacheTag:faq
+[end]

@@ -36,7 +36,6 @@ TCEFORM.pages {
   newUntil.disabled = 1
   content_from_pid.disabled = 1
   cache_timeout.disabled = 1
-  cache_tags.disabled = 1
   php_tree_stop.disabled = 1
   module.disabled = 1
   l18n_cfg.disabled = 1
