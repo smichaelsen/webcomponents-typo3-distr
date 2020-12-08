@@ -128,19 +128,24 @@
 	}
 
 	&__header-label {
-		cursor: pointer;
 		position: relative;
 		width: 100%;
+
+		&--expandable {
+			cursor: pointer;
+		}
 	}
 
 	&__indicator {
-		position: absolute;
-		right: 0;
-		top: 2px;
+		position: relative;
+		bottom: 2px;
+		.icon-size-small {
+
+		}
 		&--collapse {
 			display: none;
 			#notes_detail:checked ~ .b_notes__header-label & {
-				display: block;
+				display: inline;
 			}
 		}
 		#notes_detail:checked ~ .b_notes__header-label &--expand {
