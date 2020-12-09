@@ -63,8 +63,8 @@ return [
             'pid' => 36,
         ],
         'scheduler' => [
-            'maxLifetime' => '1440',
-            'showSampleTasks' => '1',
+            'maxLifetime' => '5',
+            'showSampleTasks' => '0',
         ],
     ],
     'FE' => [
