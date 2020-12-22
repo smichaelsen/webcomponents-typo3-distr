@@ -3,6 +3,10 @@
 defined('TYPO3_MODE') or die();
 
 (function () {
+    $GLOBALS['TYPO3_CONF_VARS']['GFX']['gdlib_png'] = 1;
+    $GLOBALS['TYPO3_CONF_VARS']['GFX']['gif_compress'] = 0;
+    $GLOBALS['TYPO3_CONF_VARS']['GFX']['jpg_quality'] = 90;
+
     $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['default'] = 'EXT:site_t3demo/Configuration/RTE/RteConfiguration.yaml';
     $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['rteWithTable'] = 'EXT:site_t3demo/Configuration/RTE/RteWithTable.yaml';
 
