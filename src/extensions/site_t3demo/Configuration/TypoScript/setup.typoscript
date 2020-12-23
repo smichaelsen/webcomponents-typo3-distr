@@ -32,6 +32,7 @@ page {
     templateName = HeaderData
     templateRootPaths.0 = EXT:site_t3demo/Resources/Private/Pages/HeaderData/Templates
     partialRootPaths.0 = EXT:site_t3demo/Resources/Private/Pages/HeaderData/Partials
+    settings.umami-website-id = {$umami-website-id}
   }
 
   10 = CASE
