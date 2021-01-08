@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "83eaef2eb934a5c1c37cd57beecd6d07",
+    "content-hash": "64150aa92aef4f4be9f5397da15de08b",
     "packages": [
         {
             "name": "b13/assetcollector",
@@ -282,19 +282,21 @@
         },
         {
             "name": "b13/picture",
-            "version": "dev-master",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/b13/picture.git",
-                "reference": "48a799ea5b25a3547afd6ddec0fcacb461a73f85"
+                "reference": "2cdefa96c63087580401fadd51ca59275d9ab459"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/b13/picture/zipball/48a799ea5b25a3547afd6ddec0fcacb461a73f85",
-                "reference": "48a799ea5b25a3547afd6ddec0fcacb461a73f85",
+                "url": "https://api.github.com/repos/b13/picture/zipball/2cdefa96c63087580401fadd51ca59275d9ab459",
+                "reference": "2cdefa96c63087580401fadd51ca59275d9ab459",
                 "shasum": ""
             },
-            "default-branch": true,
+            "require-dev": {
+                "typo3/tailor": "^1.1"
+            },
             "type": "typo3-cms-extension",
             "extra": {
                 "typo3/cms": {
@@ -313,9 +315,9 @@
             "description": "Improved TYPO3 image ViewHelper creating picture elements with support for sizes, sources, additional image formats, etc.",
             "support": {
                 "issues": "https://github.com/b13/picture/issues",
-                "source": "https://github.com/b13/picture/tree/v0.1.1"
+                "source": "https://github.com/b13/picture/tree/v1.0.0"
             },
-            "time": "2020-11-14T09:42:57+00:00"
+            "time": "2021-01-08T14:28:23+00:00"
         },
         {
             "name": "b13/site-t3demo",
@@ -7579,7 +7581,6 @@
         "b13/demologin": 20,
         "b13/faq-t3demo": 20,
         "b13/menus": 20,
-        "b13/picture": 20,
         "b13/site-t3demo": 20
     },
     "prefer-stable": true,
