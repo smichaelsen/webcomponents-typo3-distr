@@ -19,3 +19,9 @@ styles.templates {
   layoutRootPath = EXT:site_t3demo/Resources/Private/Contenttypes/Layouts
   partialRootPath = EXT:site_t3demo/Resources/Private/Contenttypes/Partials
 }
+
+umami-website-id = 4787f97e-d6be-428f-9710-dc374a6c1570
+
+[applicationContext == "Production"]
+  umami-website-id = 5092964f-4f3e-4bbc-9717-26b4bfb68ca4
+[end]
