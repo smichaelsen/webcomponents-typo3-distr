@@ -26,6 +26,22 @@
 		</div>
 	</div>
 
+	<script async defer data-website-id="5092964f-4f3e-4bbc-9717-26b4bfb68ca4" src="https://umami.b13.live/script.js"></script>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", (event) => {
+			let loginButton = document.getElementById('t3-login-submit');
+			loginButton.onclick = () => registerBackendLogin();
+
+			function registerBackendLogin(){
+				let usergroup = document.getElementById('demo-login-dropdown');
+				let usergroupText = usergroup.options[usergroup.selectedIndex];
+				let eventLabel = 'Backend Login - ' + usergroupText.text;
+				umami.trackEvent(eventLabel, 'login');
+			}
+		});
+	</script>
+
 </f:section>
 
 </html>
