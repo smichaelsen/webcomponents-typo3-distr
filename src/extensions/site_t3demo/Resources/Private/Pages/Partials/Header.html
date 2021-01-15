@@ -99,12 +99,12 @@
 			<div class="b_header__login">
 				<f:if condition="{settings.userIsLoggedIn}">
 					<f:then>
-						<f:link.page additionalParams="{logintype: 'logout'}" class="b_button b_button--secondary">
+						<f:link.page additionalParams="{logintype: 'logout'}" class="b_button b_button--secondary umami--click--button-frontend-logout">
 							<f:translate key="login.logout" extensionName="site_t3demo" />
 						</f:link.page>
 					</f:then>
 					<f:else>
-						<f:link.typolink parameter="{settings.login}" class="b_button">
+						<f:link.typolink parameter="{settings.login}" class="b_button umami--click--button-frontend-login">
 							<f:translate key="login.login" extensionName="site_t3demo" />
 						</f:link.typolink>
 					</f:else>
