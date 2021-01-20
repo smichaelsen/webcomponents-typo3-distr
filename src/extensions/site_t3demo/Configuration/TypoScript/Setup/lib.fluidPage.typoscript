@@ -45,4 +45,14 @@ lib.fluidPage {
 
 [frontend.user.isLoggedIn]
   lib.fluidPage.settings.userIsLoggedIn = true
+
+  lib.fluidPage.dataProcessing {
+    1611147990940 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+    1611147990940 {
+      special = list
+      special.value.field = uid
+      levels = 1
+      as = currentpage
+    }
+  }
 [end]
