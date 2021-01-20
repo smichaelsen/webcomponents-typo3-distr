@@ -101,16 +101,16 @@
         },
         {
             "name": "b13/content-sync",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/b13/content-sync.git",
-                "reference": "5b67aeb4813dc27fe7f052b33298731237ff56ab"
+                "reference": "29c0e6185adfbeb759d5dcbb07e5e331a74f1d58"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/b13/content-sync/zipball/5b67aeb4813dc27fe7f052b33298731237ff56ab",
-                "reference": "5b67aeb4813dc27fe7f052b33298731237ff56ab",
+                "url": "https://api.github.com/repos/b13/content-sync/zipball/29c0e6185adfbeb759d5dcbb07e5e331a74f1d58",
+                "reference": "29c0e6185adfbeb759d5dcbb07e5e331a74f1d58",
                 "shasum": ""
             },
             "require": {
@@ -146,9 +146,9 @@
             "homepage": "https://b13.com",
             "support": {
                 "issues": "https://github.com/b13/content-sync/issues",
-                "source": "https://github.com/b13/content-sync/tree/1.0.1"
+                "source": "https://github.com/b13/content-sync/tree/1.0.2"
             },
-            "time": "2020-11-28T17:38:12+00:00"
+            "time": "2021-01-20T13:16:12+00:00"
         },
         {
             "name": "b13/cta",
