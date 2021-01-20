@@ -46,7 +46,7 @@
 			position: initial;
 		}
 		&__meta {
-			position: absolute;
+			position: fixed;
 			height: 68px;
 			border-top: 1px solid $color-gray-light;
 			margin-top: calc(100vh - 68px);
