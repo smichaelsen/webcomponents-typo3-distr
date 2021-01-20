@@ -90,12 +90,12 @@
 		}
 
 		&__sublist {
-			padding: 32px 0 0;
+			padding: 32px 0 96px;
 		}
 		&__subitem {
 			text-align: center;
 			#{$self}--open &:last-child {
-				padding-bottom: 136px;
+				padding-bottom: 190px;
 			}
 		}
 	}
