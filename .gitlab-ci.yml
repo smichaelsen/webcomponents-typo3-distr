@@ -1,4 +1,5 @@
 stages:
+  - maintenance
   - lint
   - build
   - build-frontend
@@ -60,13 +61,8 @@ build:php:
     - yarn install
     - yarn build-prod
 
-# rsyncs the artifacts to the target server via deployer
-.deploy: &deploy
-  image: composer:2
-  variables:
-    # no git needed, only the artifacts are required
-    GIT_STRATEGY: none
-    TARGET_HOSTS: ""
+
+.prepare_ssh: &prepare-ssh
   before_script:
     - apk add rsync --update
     - eval $(ssh-agent -s)
@@ -74,6 +70,15 @@ build:php:
     - mkdir -p ~/.ssh && chmod 700 ~/.ssh
     - ssh-keyscan "$ssh_hosts" >> ~/.ssh/known_hosts
     - chmod 644 ~/.ssh/known_hosts
+
+# rsyncs the artifacts to the target server via deployer
+.deploy: &deploy
+  <<: *prepare-ssh
+  image: composer:2
+  variables:
+    # no git needed, only the artifacts are required
+    GIT_STRATEGY: none
+    TARGET_HOSTS: ""
   script:
     - composer global require deployer/deployer deployer/recipes --dev $composer_options
     - /tmp/vendor/bin/dep --file=./build/deploy.php deploy -vv --hosts=${TARGET_HOSTS}
@@ -116,3 +121,19 @@ deploy:staging:
     TARGET_HOSTS: "staging"
   only:
     - develop
+
+# Download database and fileadmin
+Get dump for Content Master:
+  <<: *prepare-ssh
+  image: composer:2
+  when: manual
+  stage: maintenance
+  script:
+    - mkdir dump
+    - ssh demo-content@demo01.typo3server.ch "php ./content.demo.typo3.org/current/bin/typo3cms database:export -c Default -e 'cache_*' -e '[bf]e_sessions' -e 'be_users' -e 'sys_log' -e 'sys_history' -e 'sys_refindex' | gzip -9 -c" > ./dump/dump.sql.gz
+    - rsync -avz --exclude='_processed_' demo-content@demo01.typo3server.ch:~/content.demo.typo3.org/shared/web/fileadmin/ ./dump/fileadmin
+  artifacts:
+    name: demo-content-master-dump
+    paths:
+      - ./dump/
+    expire_in: 1h
