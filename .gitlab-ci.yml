@@ -128,8 +128,8 @@ Get dump for Content Master:
   image: composer:2
   when: manual
   variables:
-    GITLAB_RELEASE_VERSION: "data"
-    PACKAGE_REGISTRY_URL: "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/generic/composer-web-installer/${GITLAB_RELEASE_VERSION}"
+    GITLAB_RELEASE_VERSION: "1.0.0"
+    PACKAGE_REGISTRY_URL: "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/generic/site/${GITLAB_RELEASE_VERSION}"
   stage: maintenance
   script:
     - mkdir dump
