@@ -129,7 +129,7 @@ Get dump for Content Master:
   when: manual
   variables:
     GITLAB_RELEASE_VERSION: "1.0.0"
-    PACKAGE_REGISTRY_URL: "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/generic/site/${GITLAB_RELEASE_VERSION}"
+    PACKAGE_REGISTRY_URL: "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/"
   stage: maintenance
   script:
     - mkdir dump
@@ -137,4 +137,6 @@ Get dump for Content Master:
     - rsync -avz --exclude='_processed_' demo-content@demo01.typo3server.ch:~/content.demo.typo3.org/shared/web/fileadmin/ ./dump/fileadmin
     - zip -r demo-data.zip dump
     - |
-      curl --header "JOB-TOKEN: ${CI_JOB_TOKEN}" --upload-file ./demo-data.zip ${PACKAGE_REGISTRY_URL}/demo-data.zip
+      curl --request DELETE --header "JOB-TOKEN: ${CI_JOB_TOKEN}" ${PACKAGE_REGISTRY_URL}/1
+    - |
+      curl --header "JOB-TOKEN: ${CI_JOB_TOKEN}" --upload-file ./demo-data.zip ${PACKAGE_REGISTRY_URL}/generic/site/${GITLAB_RELEASE_VERSION}/demo-data.zip
