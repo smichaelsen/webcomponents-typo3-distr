@@ -127,13 +127,15 @@ Get dump for Content Master:
   <<: *prepare-ssh
   image: composer:2
   when: manual
+  variables:
+    GITLAB_RELEASE_VERSION: "data"
+    PACKAGE_REGISTRY_URL: "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/generic/composer-web-installer/${GITLAB_RELEASE_VERSION}"
+  before_script:
   stage: maintenance
   script:
     - mkdir dump
     - ssh demo-content@demo01.typo3server.ch "php ./content.demo.typo3.org/current/bin/typo3cms database:export -c Default -e 'cache_*' -e '[bf]e_sessions' -e 'be_users' -e 'sys_log' -e 'sys_history' -e 'sys_refindex' | gzip -9 -c" > ./dump/dump.sql.gz
     - rsync -avz --exclude='_processed_' demo-content@demo01.typo3server.ch:~/content.demo.typo3.org/shared/web/fileadmin/ ./dump/fileadmin
-  artifacts:
-    name: demo-content-master-dump
-    paths:
-      - ./dump/
-    expire_in: 1h
+    - zip -r demo-data.zip dump
+    - |
+      curl --header "JOB-TOKEN: ${CI_JOB_TOKEN}" --upload-file ./demo-data.zip ${PACKAGE_REGISTRY_URL}/demo-data.zip
