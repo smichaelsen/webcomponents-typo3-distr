@@ -25,7 +25,7 @@ To set up the TYPO3 Demo Project for local development
 
 1. Download code `git clone ssh://git@gitlab.typo3.org:2222/services/demo.typo3.org/site.git`
 2. Install composer packages `ddev composer install`
-3. Download database/fileadmin: Go to the [latest pipeline](https://gitlab.typo3.org/services/demo.typo3.org/site/-/pipelines) (first in list), click "Get dump for Content Master" and click on "Download" in the Artifact area. The artifact is generated manually, so if its not there the jobs needs to be triggered by a user with sufficient permissions
+3. Download database/fileadmin: Go to the [Generic Packages](https://gitlab.typo3.org/services/demo.typo3.org/site/-/packages) section in Gitlab, select the "site"-Package and download the latest "demo-data.zip"
 4. Extract the downloaded file
 5. Copy the `fileadmin` folder to `<document root>web/fileadmin`
 6. Import database: `ddev import-db --src=/path/to/database/dump.sql.gz`
