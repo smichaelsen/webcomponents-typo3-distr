@@ -50,6 +50,11 @@ task('typo3:cache:flush', function() {
     run('bin/typo3cms cache:flush');
 });
 
+task('typo3:language:update', function() {
+    cd('{{release_path}}');
+    run('bin/typo3cms language:update');
+});
+
 // needed for t3o infrastructure
 task('php:reload', function() {
     //run('php-reload');
@@ -79,6 +84,7 @@ task('deploy', [
     'php:reload',
     'php:reload-prod',
     'typo3:cache:flush',
+    'typo3:language:update',
     'deploy:unlock',
     'cleanup',
     'success'
