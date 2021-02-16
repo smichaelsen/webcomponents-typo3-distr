@@ -12,12 +12,12 @@ $z-index-list: (
 	'.b_header__meta',
 	'.b_header',
 	'.b_resetbanner__overlay',
-	'.b_resetbanner'
+	'.b_resetbanner',
+	'.b_resetbanner__trigger'
 );
 
 $z-index-defaults: (
 );
-
 
 // create all z-index values
 $temp-z: 10;
