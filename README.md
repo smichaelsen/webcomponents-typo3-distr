@@ -15,6 +15,24 @@ As soon as one backend user signs in to the TYPO3 Backend, a counter is shown bo
 and on the TYPO3 Backend that within 30 minutes, the TYPO3 installation will be re-set
 to the current state.
 
+## Local Development
+
+Requirements:
+
+* DDEV, see [Get Started with DDEV](https://www.ddev.com/get-started/)
+
+To set up the TYPO3 Demo Project for local development
+
+1. Download code `git clone ssh://git@gitlab.typo3.org:2222/services/demo.typo3.org/site.git`
+2. Install composer packages `ddev composer install`
+3. Download database/fileadmin: Go to the [Generic Packages](https://gitlab.typo3.org/services/demo.typo3.org/site/-/packages) section in Gitlab, select the "site"-Package and download the latest "demo-data.zip"
+4. Extract the downloaded file
+5. Copy the `fileadmin` folder to `<document root>web/fileadmin`
+6. Import database: `ddev import-db --src=/path/to/database/dump.sql.gz`
+7. Update schema: `ddev exec bin/typo3cms database:updateschema`
+8. Create a backend user `ddev exec bin/typo3cms backend:createadmin username password`
+9. Start the project running `ddev start`
+
 ## License
 
 All code is licensed under GPL2+. All content and graphical creations are licensed under
