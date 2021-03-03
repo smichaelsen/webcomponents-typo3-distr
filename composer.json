@@ -52,6 +52,7 @@
 		"typo3/cms-filemetadata": "^10.4",
 		"typo3/cms-fluid": "^10.4",
 		"typo3/cms-fluid-styled-content": "^10.4",
+		"typo3/cms-form": "^10.4",
 		"typo3/cms-frontend": "^10.4",
 		"typo3/cms-info": "^10.4",
 		"typo3/cms-install": "^10.4",

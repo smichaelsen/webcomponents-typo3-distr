@@ -61,6 +61,9 @@
 			<trans-unit id="backendlayout.resetbanner.name" res_name="backendlayout.resetbanner.name">
 				<source>Server Reset Banner (shown on all pages)</source>
 			</trans-unit>
+			<trans-unit id="backendlayout.contactform.title" res_name="backendlayout.contactform.title">
+				<source>Contact Page (w/ Contact Form)</source>
+			</trans-unit>
 			<trans-unit id="pages.doktype.contentpage" res_name="pages.doktype.contentpage">
 				<source>Content Page</source>
 			</trans-unit>
@@ -75,6 +78,9 @@
 			</trans-unit>
 			<trans-unit id="pages.doktype.overview" res_name="pages.doktype.overview">
 				<source>Overview Page (Apples/Recipes)</source>
+			</trans-unit>
+			<trans-unit id="pages.doktype.contactform" res_name="pages.doktype.contactform">
+				<source>Contact Page (w/ Contact Form)</source>
 			</trans-unit>
 			<trans-unit id="pages.palettes.teaserdata.label" res_name="pages.palettes.teaserdata.label">
 				<source>Teaser Data</source>

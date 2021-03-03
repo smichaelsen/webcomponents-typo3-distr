@@ -57,6 +57,12 @@ p {
 	margin: $paragraph-margin-sm 0;
 }
 
+button {
+	font-size: 16px;
+	cursor: pointer;
+	font-family: $font-light;
+}
+
 strong, b {
 	font-family: $font-regular;
 }
