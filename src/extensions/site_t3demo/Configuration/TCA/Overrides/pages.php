@@ -49,6 +49,7 @@ $doktypesToAdd = [
     ['recipe', PageConfiguration::DOKTYPE_RECIPE],
     ['startpage', PageConfiguration::DOKTYPE_STARTPAGE],
     ['overview', PageConfiguration::DOKTYPE_OVERVIEW],
+    ['contactform', PageConfiguration::DOKTYPE_CONTACTPAGE, 'special'],
 ];
 
 foreach ($doktypesToAdd as $item) {
@@ -59,7 +60,7 @@ foreach ($doktypesToAdd as $item) {
             'LLL:EXT:site_t3demo/Resources/Private/Language/locallang_db.xlf:pages.doktype.' . $item[0],
             $item[1],
             '',
-            'default'
+            $item[2] ?? 'default'
         ]
     );
     $GLOBALS['TCA']['pages']['ctrl']['typeicon_classes'][$item[1]] = 'apps-pagetree-page-default';

@@ -13,4 +13,6 @@ plugin.tx_assetcollector.icons {
   arrow-up = EXT:site_t3demo/Resources/Public/Assets/SVGs/arrow-up.svg
   arrow-down = EXT:site_t3demo/Resources/Public/Assets/SVGs/arrow-down.svg
   x = EXT:site_t3demo/Resources/Public/Assets/SVGs/x.svg
+  check = EXT:site_t3demo/Resources/Public/Assets/SVGs/check.svg
+  more = EXT:site_t3demo/Resources/Public/Assets/SVGs/more.svg
 }

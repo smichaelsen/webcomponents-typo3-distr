@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "64150aa92aef4f4be9f5397da15de08b",
+    "content-hash": "52a4316d84a479405a89eb18f5a45613",
     "packages": [
         {
             "name": "b13/assetcollector",
@@ -5791,6 +5791,70 @@
             "support": {
                 "chat": "https://typo3.org/help",
                 "docs": "https://docs.typo3.org/c/typo3/cms-fluid-styled-content/master/en-us",
+                "issues": "https://forge.typo3.org",
+                "source": "https://github.com/TYPO3/TYPO3.CMS"
+            },
+            "time": "2021-02-16T06:23:48+00:00"
+        },
+        {
+            "name": "typo3/cms-form",
+            "version": "v10.4.13",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/form.git",
+                "reference": "c8aed75d84f93fe587fe0d47ed75937fd7c38380"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/form/zipball/c8aed75d84f93fe587fe0d47ed75937fd7c38380",
+                "reference": "c8aed75d84f93fe587fe0d47ed75937fd7c38380",
+                "shasum": ""
+            },
+            "require": {
+                "psr/http-message": "^1.0",
+                "symfony/expression-language": "^4.4 || ^5.0",
+                "typo3/cms-core": "10.4.13"
+            },
+            "conflict": {
+                "typo3/cms": "*"
+            },
+            "suggest": {
+                "typo3/cms-filelist": "Listing of files in the directory",
+                "typo3/cms-impexp": "Import and Export of records from TYPO3 in a custom serialized format (.T3D) for data exchange with other TYPO3 systems."
+            },
+            "type": "typo3-cms-framework",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "10.4.x-dev"
+                },
+                "typo3/cms": {
+                    "Package": {
+                        "partOfFactoryDefault": true
+                    },
+                    "extension-key": "form"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\Form\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Form Library, Plugin and Editor",
+            "homepage": "https://typo3.org",
+            "support": {
+                "chat": "https://typo3.org/help",
+                "docs": "https://docs.typo3.org/c/typo3/cms-form/master/en-us",
                 "issues": "https://forge.typo3.org",
                 "source": "https://github.com/TYPO3/TYPO3.CMS"
             },

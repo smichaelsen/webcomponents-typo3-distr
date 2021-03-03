@@ -2,12 +2,14 @@
 
 @import 'EXT:seo/Configuration/TypoScript/XmlSitemap/setup.typoscript'
 @import 'EXT:felogin/Configuration/TypoScript/setup.typoscript'
+@import 'EXT:form/Configuration/TypoScript/setup.typoscript'
 
 @import 'EXT:site_t3demo/Configuration/TypoScript/Setup/lib.fluidPage.typoscript'
 @import 'EXT:site_t3demo/Configuration/TypoScript/Setup/lib.parseFunc_RTE.typoscript'
 @import 'EXT:site_t3demo/Configuration/TypoScript/Setup/plugin.tx_assetcollector.typoscript'
 @import 'EXT:site_t3demo/Configuration/TypoScript/Setup/plugin.tx_picture.typoscript'
 @import 'EXT:site_t3demo/Configuration/TypoScript/Setup/plugin.tx_felogin.typoscript'
+@import 'EXT:site_t3demo/Configuration/TypoScript/Setup/plugin.tx_form.typoscript'
 @import 'EXT:site_t3demo/Configuration/TypoScript/Setup/tt_content.faqlist.typoscript'
 
 

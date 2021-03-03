@@ -19,6 +19,7 @@
     "build-dev": "yarn build-scss && yarn build-webpack-dev",
     "build-prod": "yarn build-scss && yarn build-webpack-prod",
     "watch-main-css": "./node_modules/node-sass/bin/node-sass -w ../extensions/site_t3demo/Resources/Private/Scss/main.scss -o ../extensions/site_t3demo/Resources/Public/Css/",
+    "watch-form-css": "./node_modules/node-sass/bin/node-sass -w ../extensions/site_t3demo/Resources/Private/Scss/form.scss -o ../extensions/site_t3demo/Resources/Public/Css/",
     "hmr": "webpack-dev-server --public 127.0.0.1:8080 --watch-poll --mode development --config config/webpack.config.hmr.js --env site_t3demo"
   },
   "browserslist": [
