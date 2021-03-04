@@ -79,10 +79,6 @@
 				<source>Server Reset Banner (shown on all pages)</source>
 				<target>Server Reset Banner (wird auf allen Seiten verwendet)</target>
 			</trans-unit>
-			<trans-unit id="backendlayout.contactform.title" res_name="backendlayout.contactform.title">
-				<source>Contact Page (w/ Contact Form)</source>
-				<target>Kontaktseite (mit Kontaktformular)</target>
-			</trans-unit>
 			<trans-unit id="pages.doktype.contentpage" res_name="pages.doktype.contentpage">
 				<source>Content Page</source>
 				<target>Inhaltsseite</target>
@@ -102,10 +98,6 @@
 			<trans-unit id="pages.doktype.overview" res_name="pages.doktype.overview">
 				<source>Overview Page (Apples/Recipes)</source>
 				<target>Übersichtsseite (Äpfel/Rezepte)</target>
-			</trans-unit>
-			<trans-unit id="pages.doktype.contactform" res_name="pages.doktype.contactform">
-				<source>Contact Page (w/ Contact Form)</source>
-				<target>Kontaktseite (mit Kontaktformular)</target>
 			</trans-unit>
 			<trans-unit id="pages.palettes.teaserdata.label" res_name="pages.palettes.teaserdata.label">
 				<source>Teaser Data</source>
