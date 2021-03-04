@@ -73,6 +73,11 @@ return [
             'maxLifetime' => '5',
             'showSampleTasks' => '0',
         ],
+        'schema' => [
+            'automaticBreadcrumbSchemaGeneration' => '1',
+            'automaticWebPageSchemaGeneration' => '0',
+            'embedMarkupInBodySection' => '1',
+        ],
     ],
     'FE' => [
         'debug' => false,
@@ -138,5 +143,5 @@ return [
         'systemMaintainers' => [
             1,
         ],
-    ]
+    ],
 ];

@@ -35,6 +35,7 @@
 		"b13/menus": "dev-master",
 		"b13/picture": "^1.0",
 		"b13/site-t3demo": "dev-master",
+		"brotkrueml/schema": "^1.10",
 		"doctrine/dbal": "~2.10.3",
 		"helhum/dotenv-connector": "^3.0",
 		"helhum/typo3-console": "^6.3",
