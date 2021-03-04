@@ -106,6 +106,17 @@
 		[dir="rtl"] & {
 			background-position: left center;
 		}
+
+		&--multi {
+			height: auto;
+			background-image: none;
+
+			option {
+				line-height: 1.5;
+				padding-top: 5px;
+				padding-bottom: 5px;
+			}
+		}
 	}
 
 	&__textarea {
