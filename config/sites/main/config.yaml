@@ -8,15 +8,15 @@ baseVariants:
     condition: 'applicationContext == "Development/DDEV"'
 errorHandling:
   -
-    errorCode: '404'
+    errorCode: 404
     errorHandler: Page
     errorContentSource: 't3://page?uid=29'
   -
-    errorCode: '403'
+    errorCode: 403
     errorHandler: Page
     errorContentSource: 't3://page?uid=49'
   -
-    errorCode: '500'
+    errorCode: 500
     errorHandler: Page
     errorContentSource: 't3://page?uid=50'
 languages:
@@ -47,15 +47,20 @@ languages:
     websiteTitle: ''
     fallbackType: strict
 rootPageId: 1
-sitePackage: 'site_t3demo'
-routes:
-  -
-    route: robots.txt
-    type: staticText
-    content: "User-agent: *\r\nDisallow: /typo3/\r\nAllow: /typo3/sysext/frontend/Resources/Public/*\r\n\r\nSitemap: https://demo.typo3.org/sitemap.xml"
 routeEnhancers:
   PageTypeSuffix:
     type: PageType
     map:
       resettimer.html: 1603464133342
       sitemap.xml: 1533906435
+routes:
+  -
+    route: robots.txt
+    type: staticText
+    content: "User-agent: *\r\nDisallow: /typo3/\r\nAllow: /typo3/sysext/frontend/Resources/Public/*\r\n\r\nSitemap: https://demo.typo3.org/sitemap.xml"
+  -
+    route: google34eb0c66f374609a.html
+    type: staticText
+    content: 'google-site-verification: google34eb0c66f374609a.html'
+sitePackage: site_t3demo
+websiteTitle: ''
