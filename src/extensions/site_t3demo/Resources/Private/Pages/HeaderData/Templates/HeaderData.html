@@ -1,6 +1,7 @@
 <html
 	xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
 	data-namespace-typo3-fluid="true"
+	xmlns:schema="http://typo3.org/ns/Brotkrueml/Schema/ViewHelpers"
 >
 
 <f:render partial="Favicons"/>
@@ -10,5 +11,29 @@
 <link rel="preload" as="font" crossorigin="" type="font/woff" href="/typo3conf/ext/site_t3demo/Resources/Public/Fonts/Lato/Lato-Regular.woff2">
 
 <script async defer data-website-id="{settings.umami-website-id}" src="https://umami.b13.live/script.js"></script>
+
+<f:comment>
+	<!-- add structured data for different backendLayouts -->
+</f:comment>
+<f:if condition="{data.abstract}">
+	<f:then>
+		<f:variable name="description">{data.abstract}</f:variable>
+	</f:then>
+	<f:else>
+		<f:variable name="description">{data.description}</f:variable>
+	</f:else>
+</f:if>
+<f:switch expression="{pagelayout}">
+	<f:defaultCase>
+		<schema:type.webPage
+			url="{f:uri.page(pageUid: data.uid, absolute: 1)}"
+			name="TYPO3 Demo Project"
+			headline="{data.title}"
+			description="{description}"
+		>
+			<f:render partial="StructuredData/Organization" arguments="{sameas: sameas, as: 'publisher'}"/>
+		</schema:type.webPage>
+	</f:defaultCase>
+</f:switch>
 
 </html>

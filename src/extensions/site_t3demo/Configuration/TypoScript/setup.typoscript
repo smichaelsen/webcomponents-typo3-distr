@@ -35,6 +35,13 @@ page {
     templateRootPaths.0 = EXT:site_t3demo/Resources/Private/Pages/HeaderData/Templates
     partialRootPaths.0 = EXT:site_t3demo/Resources/Private/Pages/HeaderData/Partials
     settings.umami-website-id = {$umami-website-id}
+
+    dataProcessing.1615216630 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+    dataProcessing.1615216630 {
+      special = directory
+      special.value = {$pages.profileLinks}
+      as = sameas
+    }
   }
 
   10 = CASE
