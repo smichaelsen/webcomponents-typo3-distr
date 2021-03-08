@@ -4,6 +4,7 @@ plugin.tx_assetcollector.icons {
   instagram = EXT:site_t3demo/Resources/Public/Assets/SVGs/instagram.svg
   youtube = EXT:site_t3demo/Resources/Public/Assets/SVGs/youtube.svg
   twitter = EXT:site_t3demo/Resources/Public/Assets/SVGs/twitter.svg
+  gitlab = EXT:site_t3demo/Resources/Public/Assets/SVGs/gitlab.svg
   typo3 = EXT:site_t3demo/Resources/Public/Assets/SVGs/TYPO3.svg
   infobanner = EXT:site_t3demo/Resources/Public/Assets/SVGs/infobanner.svg
   exit = EXT:site_t3demo/Resources/Public/Assets/SVGs/exit.svg
