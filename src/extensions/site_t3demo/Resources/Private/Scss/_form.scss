@@ -227,5 +227,7 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-column-gap: 30px;
+		// removing additional spacing on top/bottom of form rows
+		margin: -16px 0;
 	}
 }
