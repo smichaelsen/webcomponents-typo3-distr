@@ -1,9 +1,4 @@
 plugin.tx_form {
-  view {
-    templateRootPaths.10 = EXT:site_t3demo/Resources/Private/Plugins/Form/Templates/
-    partialRootPaths.10 = EXT:site_t3demo/Resources/Private/Plugins/Form/Partials/
-    layoutRootPaths.10 = EXT:site_t3demo/Resources/Private/Plugins/Form/Layouts/
-  }
   settings {
     yamlConfigurations {
       100 = EXT:site_t3demo/Configuration/Yaml/FormSetup.yaml
