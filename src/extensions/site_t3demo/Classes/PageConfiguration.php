@@ -24,6 +24,7 @@ class PageConfiguration
     public const DOKTYPE_RECIPE = 12;
     public const DOKTYPE_OVERVIEW = 13;
     public const DOKTYPE_CONTACTPAGE = 14;
+    public const DOKTYPE_FAQPAGE = 15;
 
     protected array $backendLayoutMapping = [
         self::DOKTYPE_CONTENTPAGE => 'pagets__Contentpage',
@@ -31,7 +32,8 @@ class PageConfiguration
         self::DOKTYPE_APPLE => 'pagets__Applepage',
         self::DOKTYPE_RECIPE => 'pagets__Recipepage',
         self::DOKTYPE_OVERVIEW => 'pagets__Overviewpage',
-        self::DOKTYPE_CONTACTPAGE => 'pagets__Contactform'
+        self::DOKTYPE_CONTACTPAGE => 'pagets__Contactform',
+        self::DOKTYPE_FAQPAGE => 'pagets__Faqpage'
     ];
 
     public function getBackendLayout(int $doktype): string

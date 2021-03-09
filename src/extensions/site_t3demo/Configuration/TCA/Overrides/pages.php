@@ -50,6 +50,7 @@ $doktypesToAdd = [
     ['startpage', PageConfiguration::DOKTYPE_STARTPAGE],
     ['overview', PageConfiguration::DOKTYPE_OVERVIEW],
     ['contactform', PageConfiguration::DOKTYPE_CONTACTPAGE, 'special'],
+    ['faqpage', PageConfiguration::DOKTYPE_FAQPAGE],
 ];
 
 foreach ($doktypesToAdd as $item) {

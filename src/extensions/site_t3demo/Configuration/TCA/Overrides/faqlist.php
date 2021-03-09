@@ -16,15 +16,5 @@ defined('TYPO3_MODE') or die();
 $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['faqlist'] = 'mimetypes-x-faq_t3demo';
 
 $GLOBALS['TCA']['tt_content']['types']['faqlist'] = [
-    'showitem' => $GLOBALS['TCA']['tt_content']['defaultTypeConfiguration']['begin'] . '
-        --palette--;;headers,
-        bodytext,
-        ' . $GLOBALS['TCA']['tt_content']['defaultTypeConfiguration']['end'],
-    'columnsOverrides' => [
-        'bodytext' => [
-            'config' => [
-                'enableRichtext' => true,
-            ],
-        ],
-    ],
+    'showitem' => $GLOBALS['TCA']['tt_content']['defaultTypeConfiguration']['begin'] . $GLOBALS['TCA']['tt_content']['defaultTypeConfiguration']['end'],
 ];

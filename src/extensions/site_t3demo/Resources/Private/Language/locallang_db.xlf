@@ -46,6 +46,9 @@
 			<trans-unit id="backendlayout.overviewpage.title" res_name="backendlayout.overviewpage.title">
 				<source>Overview Page (Apples/Recipes)</source>
 			</trans-unit>
+			<trans-unit id="backendlayout.faqpage.title" res_name="backendlayout.faqpage.title">
+				<source>FAQ Page</source>
+			</trans-unit>
 			<trans-unit id="backendlayout.stage.name" res_name="backendlayout.stage.name">
 				<source>Stage Content</source>
 			</trans-unit>
@@ -81,6 +84,10 @@
 			</trans-unit>
 			<trans-unit id="pages.doktype.contactform" res_name="pages.doktype.contactform">
 				<source>Contact Page (w/ Contact Form)</source>
+			</trans-unit>
+
+			<trans-unit id="pages.doktype.faqpage" res_name="pages.doktype.faqpage">
+				<source>FAQ Page</source>
 			</trans-unit>
 			<trans-unit id="pages.palettes.teaserdata.label" res_name="pages.palettes.teaserdata.label">
 				<source>Teaser Data</source>
