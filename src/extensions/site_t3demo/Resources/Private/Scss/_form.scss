@@ -106,6 +106,17 @@
 		[dir="rtl"] & {
 			background-position: left center;
 		}
+
+		&--multi {
+			height: auto;
+			background-image: none;
+
+			option {
+				line-height: 1.5;
+				padding-top: 5px;
+				padding-bottom: 5px;
+			}
+		}
 	}
 
 	&__textarea {
@@ -216,5 +227,7 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-column-gap: 30px;
+		// removing additional spacing on top/bottom of form rows
+		margin: -16px 0;
 	}
 }

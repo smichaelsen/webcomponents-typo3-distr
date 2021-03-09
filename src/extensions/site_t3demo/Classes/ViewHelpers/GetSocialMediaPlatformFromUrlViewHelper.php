@@ -34,6 +34,7 @@ class GetSocialMediaPlatformFromUrlViewHelper extends AbstractViewHelper
         'linkedin',
         'google',
         'youtube',
+        'gitlab',
         'typo3'
     ];
 

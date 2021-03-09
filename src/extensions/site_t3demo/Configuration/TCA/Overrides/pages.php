@@ -49,7 +49,6 @@ $doktypesToAdd = [
     ['recipe', PageConfiguration::DOKTYPE_RECIPE],
     ['startpage', PageConfiguration::DOKTYPE_STARTPAGE],
     ['overview', PageConfiguration::DOKTYPE_OVERVIEW],
-    ['contactform', PageConfiguration::DOKTYPE_CONTACTPAGE, 'special'],
     ['faqpage', PageConfiguration::DOKTYPE_FAQPAGE],
 ];
 
@@ -108,7 +107,7 @@ $GLOBALS['TCA']['pages']['palettes']['teaserdata'] = [
     'label' => 'LLL:EXT:site_t3demo/Resources/Private/Language/locallang_db.xlf:pages.palettes.teaserdata.label',
     'showitem' => 'abstract;LLL:EXT:site_t3demo/Resources/Private/Language/locallang_db.xlf:pages.abstract.label,
         --linebreak--,
-        media;LLL:EXT:site_t3demo/Resources/Private/Language/locallang_db.xlf:pages.abstract.label'
+        media;LLL:EXT:site_t3demo/Resources/Private/Language/locallang_db.xlf:pages.media.label'
 ];
 
 // add teaser palette to page properties for apples and recipes

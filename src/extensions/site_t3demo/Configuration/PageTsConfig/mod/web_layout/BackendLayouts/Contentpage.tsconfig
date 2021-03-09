@@ -19,7 +19,7 @@ mod.web_layout.BackendLayouts.Contentpage {
             1 {
               name = LLL:EXT:site_t3demo/Resources/Private/Language/locallang_db.xlf:backendlayout.maincontent.name
               colPos = 0
-              allowed.CType = contentstage,textmedia,felogin_login
+              allowed.CType = contentstage,textmedia,felogin_login,form_formframework
             }
           }
         }
