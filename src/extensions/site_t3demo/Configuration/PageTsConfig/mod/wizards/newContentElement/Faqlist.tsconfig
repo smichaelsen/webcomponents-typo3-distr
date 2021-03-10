@@ -3,5 +3,4 @@ mod.wizards.newContentElement.wizardItems.special.elements.faqlist {
   description = LLL:EXT:site_t3demo/Resources/Private/Language/locallang_db.xlf:CType.faqlist.description
   tt_content_defValues.CType = faqlist
   iconIdentifier = mimetypes-x-faq_t3demo
-  saveAndClose = true
 }

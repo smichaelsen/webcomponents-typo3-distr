@@ -7,11 +7,13 @@
 
 <f:layout name="Default" />
 
-<f:section name="Header"></f:section>
-
 <f:section name="Main">
 
 	<ac:css file="EXT:site_t3demo/Resources/Public/Css/faqlist.css" />
+
+	<f:if condition="{data.bodytext}">
+		<f:format.html>{data.bodytext}</f:format.html>
+	</f:if>
 
 	<div class="b_faq">
 		<f:for each="{faqs}" as="faq">
