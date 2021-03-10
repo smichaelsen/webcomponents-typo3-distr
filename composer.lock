@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "52a4316d84a479405a89eb18f5a45613",
+    "content-hash": "7ca3305cd9780f952c397a8035d1d6bc",
     "packages": [
         {
             "name": "b13/assetcollector",
@@ -167,7 +167,6 @@
             "replace": {
                 "b13/cta": "*"
             },
-            "default-branch": true,
             "type": "typo3-cms-extension",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -254,7 +253,6 @@
                 "typo3/coding-standards": "^0.1.0",
                 "typo3/testing-framework": "~6.1.0"
             },
-            "default-branch": true,
             "type": "typo3-cms-extension",
             "extra": {
                 "typo3/cms": {
@@ -342,6 +340,83 @@
             "transport-options": {
                 "relative": true
             }
+        },
+        {
+            "name": "brotkrueml/schema",
+            "version": "v1.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/brotkrueml/schema.git",
+                "reference": "7dd97e5237723a792dfbb8e6c3837d5288f94315"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/brotkrueml/schema/zipball/7dd97e5237723a792dfbb8e6c3837d5288f94315",
+                "reference": "7dd97e5237723a792dfbb8e6c3837d5288f94315",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=7.2",
+                "typo3/cms-core": "^9.5.16 || ^10.4 || ^11.0"
+            },
+            "conflict": {
+                "brotkrueml/sdbreadcrumb": "*"
+            },
+            "require-dev": {
+                "clue/graph": "^0.9",
+                "composer/package-versions-deprecated": "^1.8",
+                "dg/bypass-finals": "^1.1",
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "mikey179/vfsstream": "^1.6",
+                "php-coveralls/php-coveralls": "^2.2",
+                "phpunit/phpunit": "^8.5 || ^9.1",
+                "twig/twig": "^3.0",
+                "typo3/cms-adminpanel": "^9.5.16 || ^10.4 || ^11.0",
+                "typo3/coding-standards": "^0.2",
+                "typo3/testing-framework": "^4.13 || ^6.2",
+                "vimeo/psalm": "^4.0"
+            },
+            "suggest": {
+                "brotkrueml/schema-virtuallocation": "Provides pending type VirtualLocation for events",
+                "typo3/cms-adminpanel": "Display schema.org types and properties on a page in Admin Panel"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.10.x-dev"
+                },
+                "typo3/cms": {
+                    "extension-key": "schema",
+                    "app-dir": ".Build",
+                    "web-dir": ".Build/web"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Brotkrueml\\Schema\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Müller",
+                    "role": "Developer"
+                }
+            ],
+            "description": "API and view helpers for schema.org markup",
+            "keywords": [
+                "JSON-LD",
+                "TYPO3 CMS",
+                "TYPO3 Extension",
+                "schema.org",
+                "seo",
+                "structured data"
+            ],
+            "time": "2020-12-28T10:55:44+00:00"
         },
         {
             "name": "cogpowered/finediff",
@@ -7578,5 +7653,5 @@
     "platform-overrides": {
         "php": "7.4.12"
     },
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "1.1.0"
 }

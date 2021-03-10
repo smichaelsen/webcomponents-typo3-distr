@@ -49,6 +49,7 @@ $doktypesToAdd = [
     ['recipe', PageConfiguration::DOKTYPE_RECIPE],
     ['startpage', PageConfiguration::DOKTYPE_STARTPAGE],
     ['overview', PageConfiguration::DOKTYPE_OVERVIEW],
+    ['faqpage', PageConfiguration::DOKTYPE_FAQPAGE],
 ];
 
 foreach ($doktypesToAdd as $item) {

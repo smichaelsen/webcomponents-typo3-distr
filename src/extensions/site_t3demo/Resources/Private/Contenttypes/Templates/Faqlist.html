@@ -29,6 +29,21 @@
 		</f:for>
 	</div>
 
+	<schema:type.fAQPage>
+		<f:for each="{faqs}" as="faq">
+
+			<schema:type.question
+				-as="mainEntity"
+				name="{faq.data.question}"
+			>
+				<schema:type.answer
+					-as="acceptedAnswer"
+					text="{faq.data.answer -> f:format.stripTags()}"
+				/>
+			</schema:type.question>
+		</f:for>
+	</schema:type.fAQPage>
+
 </f:section>
 
 </html>
