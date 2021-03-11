@@ -84,7 +84,7 @@ foreach ($doktypesToAdd as $doktype) {
     $GLOBALS['TCA']['pages']['types'][$doktype[1]]['showitem'] = $GLOBALS['TCA']['pages']['types'][1]['showitem'];
 }
 
-// remove "Media" and "Abstraact" palettes from recipe and apple pages
+// remove "Media" and "Abstract" palettes from recipe and apple pages
 foreach ([
     (string)PageConfiguration::DOKTYPE_APPLE,
     (string)PageConfiguration::DOKTYPE_RECIPE
@@ -95,10 +95,10 @@ foreach ([
 
 // remove "Media" from all doktypes not using the field
 foreach ([
-             (string)PageConfiguration::DOKTYPE_CONTENTPAGE,
-             (string)PageConfiguration::DOKTYPE_STARTPAGE,
-             (string)PageConfiguration::DOKTYPE_OVERVIEW
-         ] as $doktype) {
+    (string)PageConfiguration::DOKTYPE_CONTENTPAGE,
+    (string)PageConfiguration::DOKTYPE_STARTPAGE,
+    (string)PageConfiguration::DOKTYPE_OVERVIEW
+] as $doktype) {
     $GLOBALS['TCA']['pages']['types'][$doktype]['showitem'] = str_replace('--palette--;;media,', '', $GLOBALS['TCA']['pages']['types'][$doktype]['showitem']);
 }
 
@@ -112,9 +112,9 @@ $GLOBALS['TCA']['pages']['palettes']['teaserdata'] = [
 
 // add teaser palette to page properties for apples and recipes
 foreach ([
-             (string)PageConfiguration::DOKTYPE_APPLE,
-             (string)PageConfiguration::DOKTYPE_RECIPE
-         ] as $doktype) {
+    (string)PageConfiguration::DOKTYPE_APPLE,
+    (string)PageConfiguration::DOKTYPE_RECIPE
+] as $doktype) {
     ExtensionManagementUtility::addToAllTCAtypes(
         'pages',
         '--palette--;;teaserdata',
