@@ -99,6 +99,10 @@
 				<source>Overview Page (Apples/Recipes)</source>
 				<target>Übersichtsseite (Äpfel/Rezepte)</target>
 			</trans-unit>
+			<trans-unit id="pages.doktype.faqpage" resname="pages.doktype.faqpage">
+				<source>FAQ Page</source>
+				<target>FAQ-Seite</target>
+			</trans-unit>
 			<trans-unit id="pages.palettes.teaserdata.label" resname="pages.palettes.teaserdata.label">
 				<source>Teaser Data</source>
 				<target>Teaserdaten</target>
