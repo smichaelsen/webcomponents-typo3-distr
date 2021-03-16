@@ -7,7 +7,7 @@
 			<trans-unit id="login.link" resname="login.link">
 				<source>Use Demo-Login</source>
 			</trans-unit>
-			<trans-unit id="login.username.label">
+			<trans-unit id="login.username.label" resname="login.username.label">
 				<source>Choose any username</source>
 			</trans-unit>
 

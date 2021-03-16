@@ -3,7 +3,7 @@
 	<file t3:id="1602491125" source-language="en" datatype="plaintext" product-name="faq-t3demo-module">
 		<header/>
 		<body>
-			<trans-unit id="mlang_tabs_tab">
+			<trans-unit id="mlang_tabs_tab" resname="mlang_tabs_tab">
 				<source>FAQ</source>
 			</trans-unit>
 			<trans-unit id="heading_text" resname="heading_text">
