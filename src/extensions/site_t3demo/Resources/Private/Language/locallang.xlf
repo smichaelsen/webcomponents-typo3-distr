@@ -7,19 +7,19 @@
 			<authorEmail>typo3@b13.com</authorEmail>
 		</header>
 		<body>
-			<trans-unit id="login.login" res_name="login.login">
+			<trans-unit id="login.login" resname="login.login">
 				<source>Log In</source>
 			</trans-unit>
-			<trans-unit id="login.logout" res_name="login.logout">
+			<trans-unit id="login.logout" resname="login.logout">
 				<source>Log Out</source>
 			</trans-unit>
-			<trans-unit id="mobile-menu-back" res_name="mobile-menu-back">
+			<trans-unit id="mobile-menu-back" resname="mobile-menu-back">
 				<source>Back</source>
 			</trans-unit>
-			<trans-unit id="resetbanner.text" res_name="resetbanner.text">
+			<trans-unit id="resetbanner.text" resname="resetbanner.text">
 				<source>Next Server Reset</source>
 			</trans-unit>
-			<trans-unit id="resetbanner.timeunit" res_name="resetbanner.timeunit">
+			<trans-unit id="resetbanner.timeunit" resname="resetbanner.timeunit">
 				<source>min.</source>
 			</trans-unit>
 		</body>
