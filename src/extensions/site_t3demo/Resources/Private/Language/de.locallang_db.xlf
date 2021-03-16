@@ -59,6 +59,10 @@
 				<source>Overview Page (Apples/Recipes)</source>
 				<target>Übersichtsseite (Äpfel/Rezepte)</target>
 			</trans-unit>
+			<trans-unit id="backendlayout.faqpage.title" resname="backendlayout.faqpage.title">
+				<source>FAQ Page</source>
+				<target>FAQ-Seite</target>
+			</trans-unit>
 			<trans-unit id="backendlayout.stage.name" resname="backendlayout.stage.name">
 				<source>Stage Content</source>
 				<target>Inhalt Bühne</target>
