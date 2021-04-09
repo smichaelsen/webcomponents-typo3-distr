@@ -9,23 +9,23 @@
 		<body>
 			<trans-unit id="login.login" resname="login.login">
 				<source>Log In</source>
-				<target>[needs translation] Log In</target>
+				<target>התחברות</target>
 			</trans-unit>
 			<trans-unit id="login.logout" resname="login.logout">
 				<source>Log Out</source>
-				<target>[needs translation] Log Out</target>
+				<target>התנתקות</target>
 			</trans-unit>
 			<trans-unit id="mobile-menu-back" resname="mobile-menu-back">
 				<source>Back</source>
-				<target>[needs translation] Back</target>
+				<target>חזרה</target>
 			</trans-unit>
 			<trans-unit id="resetbanner.text" resname="resetbanner.text">
 				<source>Next Server Reset</source>
-				<target>[needs translation] Next Server Reset</target>
+				<target>איפוס המערכת הבא</target>
 			</trans-unit>
 			<trans-unit id="resetbanner.timeunit" resname="resetbanner.timeunit">
 				<source>min.</source>
-				<target>[needs translation] min.</target>
+				<target>דקות</target>
 			</trans-unit>
 		</body>
 	</file>
