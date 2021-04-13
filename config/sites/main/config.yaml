@@ -32,6 +32,7 @@ languages:
     hreflang: en-us
     direction: ltr
     flag: us
+    websiteTitle: ''
   -
     title: German
     enabled: true
@@ -46,6 +47,22 @@ languages:
     flag: de
     websiteTitle: ''
     fallbackType: strict
+    fallbacks: ''
+  -
+    title: Hebrew
+    enabled: false
+    base: /he/
+    typo3Language: he
+    locale: he_IL.UTF-8
+    iso-639-1: he
+    websiteTitle: ''
+    navigationTitle: HE
+    hreflang: he
+    direction: rtl
+    fallbackType: strict
+    fallbacks: ''
+    flag: il
+    languageId: 2
 rootPageId: 1
 routeEnhancers:
   PageTypeSuffix:
