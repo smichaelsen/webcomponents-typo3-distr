@@ -73,7 +73,8 @@
 			"@php bin/typo3cms install:generatepackagestates"
 		],
 		"frontend-builds": [
-			"cd src/webpack; nvm use; yarn install; yarn build-prod"
+			"if [ \"$IS_DDEV_PROJECT\" != \"1\" ]; then export PATH=$HOME/.nvm/versions/node/v14.16.1/bin:$PATH; fi",
+			"cd src/webpack; yarn install; yarn build-prod"
 		],
 		"post-update-cmd": [
 			"@typo3-setup"

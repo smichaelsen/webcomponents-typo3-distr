@@ -53,7 +53,7 @@ build:php:
 # compile and build JS / CSS
 # should be used in conjunction with an artifact
 .frontend_bootstrap: &frontend-bootstrap
-  image: node:12.19-buster
+  image: node:14.16-buster
   variables:
     node_path: src/webpack
   script:
