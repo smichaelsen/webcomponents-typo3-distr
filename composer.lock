@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7ca3305cd9780f952c397a8035d1d6bc",
+    "content-hash": "6f22683fb3c40a887382cc11a29248de",
     "packages": [
         {
             "name": "b13/assetcollector",
@@ -152,32 +152,41 @@
         },
         {
             "name": "b13/cta",
-            "version": "dev-master",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/b13/cta.git",
-                "reference": "2a87f1773ae74bd5a1fcacb810d1b77d6c14289d"
+                "reference": "9ee8462a677afebbb9362403033e77ccab2eb74c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/b13/cta/zipball/2a87f1773ae74bd5a1fcacb810d1b77d6c14289d",
-                "reference": "2a87f1773ae74bd5a1fcacb810d1b77d6c14289d",
+                "url": "https://api.github.com/repos/b13/cta/zipball/9ee8462a677afebbb9362403033e77ccab2eb74c",
+                "reference": "9ee8462a677afebbb9362403033e77ccab2eb74c",
                 "shasum": ""
+            },
+            "require": {
+                "typo3/cms-backend": "^9.5 || ^10.4 || ^11.0",
+                "typo3/cms-fluid-styled-content": "^9.5 || ^10.4 || ^11.0"
             },
             "replace": {
                 "b13/cta": "*"
             },
             "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "cta"
+                }
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "MIT"
+                "GPL-2.0-or-later"
             ],
             "description": "Adds a CTA Content-type to tt_content",
             "support": {
                 "issues": "https://github.com/b13/cta/issues",
-                "source": "https://github.com/b13/cta/tree/1.0.0"
+                "source": "https://github.com/b13/cta/tree/1.1.1"
             },
-            "time": "2020-06-02T14:37:41+00:00"
+            "time": "2021-03-15T13:19:56+00:00"
         },
         {
             "name": "b13/demologin",
@@ -7636,7 +7645,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "b13/cta": 20,
         "b13/demologin": 20,
         "b13/faq-t3demo": 20,
         "b13/menus": 20,
