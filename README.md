@@ -31,8 +31,8 @@ To set up the TYPO3 Demo Project for local development
    2. Extract the downloaded file
    3. Copy the `fileadmin` folder to `<document root>web/fileadmin`
    4. Import database: `ddev import-db --src=/path/to/database/dump.sql.gz`
-6. Update schema: `ddev exec bin/typo3cms database:updateschema`
-7. Create a backend user `ddev exec bin/typo3cms backend:createadmin username password`
+6. Update schema: `ddev typo3cms database:updateschema`
+7. Create a backend user `ddev typo3cms backend:createadmin username password`
 8. Start the project running `ddev start`
 
 ## License
