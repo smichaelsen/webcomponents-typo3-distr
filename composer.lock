@@ -186,7 +186,7 @@
         },
         {
             "name": "b13/demologin",
-            "version": "dev-T3DEMO-343-TYPO3-update",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "src/extensions/demologin",
@@ -216,7 +216,7 @@
         },
         {
             "name": "b13/faq-t3demo",
-            "version": "dev-T3DEMO-343-TYPO3-update",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "src/extensions/faq_t3demo",
@@ -326,7 +326,7 @@
         },
         {
             "name": "b13/site-t3demo",
-            "version": "dev-T3DEMO-343-TYPO3-update",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "src/extensions/site_t3demo",
