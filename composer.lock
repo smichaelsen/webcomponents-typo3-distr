@@ -54,16 +54,16 @@
         },
         {
             "name": "b13/bolt",
-            "version": "2.1.1",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/b13/bolt.git",
-                "reference": "dc45ab6198f89126b5992a164207bc0a0735ea60"
+                "reference": "f14781d653a3fd0c949f4d8b9cc0e2e75aeaa7a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/b13/bolt/zipball/dc45ab6198f89126b5992a164207bc0a0735ea60",
-                "reference": "dc45ab6198f89126b5992a164207bc0a0735ea60",
+                "url": "https://api.github.com/repos/b13/bolt/zipball/f14781d653a3fd0c949f4d8b9cc0e2e75aeaa7a2",
+                "reference": "f14781d653a3fd0c949f4d8b9cc0e2e75aeaa7a2",
                 "shasum": ""
             },
             "require": {
@@ -75,7 +75,7 @@
                 "typo3-ter/bolt": "*"
             },
             "require-dev": {
-                "typo3/coding-standards": "^0.2.0",
+                "typo3/coding-standards": "^0.4.0",
                 "typo3/tailor": "^1.1"
             },
             "type": "typo3-cms-extension",
@@ -104,9 +104,9 @@
             ],
             "support": {
                 "issues": "https://github.com/b13/bolt/issues",
-                "source": "https://github.com/b13/bolt/tree/2.1.1"
+                "source": "https://github.com/b13/bolt/tree/2.2.0"
             },
-            "time": "2021-01-01T13:35:45+00:00"
+            "time": "2021-10-26T14:19:28+00:00"
         },
         {
             "name": "b13/content-sync",
