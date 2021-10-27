@@ -68,9 +68,6 @@
 		"typo3/cms-viewpage": "^11.5"
 	},
 	"scripts": {
-		"typo3-setup": [
-			"@php bin/typo3cms install:generatepackagestates"
-		],
 		"frontend-builds": [
 			"if [ \"$IS_DDEV_PROJECT\" != \"1\" ]; then export PATH=$HOME/.nvm/versions/node/v14.16.1/bin:$PATH; fi",
 			"cd src/webpack; yarn install; yarn build-prod"
