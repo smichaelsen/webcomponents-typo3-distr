@@ -37,7 +37,7 @@ class DatabaseRecordList extends \TYPO3\CMS\Recordlist\RecordList\DatabaseRecord
      * @param int $id
      * @return int
      */
-    public function getTotalItems(string $table,int $id): int
+    public function getTotalItems(string $table, int $id): int
     {
         $queryBuilderTotalItems = $this->getQueryBuilder($table, $id, [], ['*'], false, 0, 1);
         return (int)$queryBuilderTotalItems->count('*')
