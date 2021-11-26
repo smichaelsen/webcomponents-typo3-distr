@@ -42,6 +42,6 @@ class DatabaseRecordList extends \TYPO3\CMS\Recordlist\RecordList\DatabaseRecord
         $queryBuilderTotalItems = $this->getQueryBuilder($table, $id, [], ['*'], false, 0, 1);
         return (int)$queryBuilderTotalItems->count('*')
             ->execute()
-            ->fetchOne();
+            ->fetch(\PDO::FETCH_COLUMN);
     }
 }
