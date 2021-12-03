@@ -22,7 +22,7 @@ cache:
 # Runs tests, currently it runs phpstan + php-cs-fixer
 code-analysis:php:
   stage: lint
-  image: composer:2.0.8
+  image: composer:2.1.8
   before_script:
     - composer install --ignore-platform-reqs $composer_options
   script:
@@ -33,7 +33,7 @@ code-analysis:php:
 # Builds the artifacts for the production system (composer first)
 build:php:
   stage: build
-  image: composer:2.0.8
+  image: composer:2.1.8
   script:
     - composer install --no-dev -o -a --ignore-platform-reqs $composer_options
   artifacts:
