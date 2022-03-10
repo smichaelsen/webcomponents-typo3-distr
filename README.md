@@ -20,7 +20,7 @@ to the current state.
 Requirements:
 
 * DDEV, see [Get Started with DDEV](https://www.ddev.com/get-started/)
-* Composer >= 2.1
+* Composer >= 2.2
 * PHP >= 7.4.1 <= 8.0.99
 
 To set up the TYPO3 Demo Project for local development
