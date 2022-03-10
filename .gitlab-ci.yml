@@ -27,7 +27,7 @@ code-analysis:php:
     - composer install --ignore-platform-reqs $composer_options
   script:
     - if [ -e bin/phpstan ]; then php -d memory_limit=2G ./bin/phpstan analyse; fi
-    - if [ -e bin/php-cs-fixer ]; then php -d memory_limit=2G ./bin/php-cs-fixer fix v --dry-run --stop-on-violation --using-cache=no; fi
+    - if [ -e bin/php-cs-fixer ]; then php -d memory_limit=2G ./bin/php-cs-fixer fix -v --dry-run --stop-on-violation --using-cache=no; fi
 
 
 # Builds the artifacts for the production system (composer first)
