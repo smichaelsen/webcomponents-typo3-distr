@@ -24,7 +24,7 @@ code-analysis:php:
   stage: lint
   image: composer:2.2
   before_script:
-    - composer install --ignore-platform-reqs $composer_options
+    - composer install $composer_options
   script:
     - if [ -e bin/phpstan ]; then php -d memory_limit=2G ./bin/phpstan analyse; fi
     - if [ -e bin/php-cs-fixer ]; then php -d memory_limit=2G ./bin/php-cs-fixer fix -v --dry-run --stop-on-violation --using-cache=no; fi
@@ -35,7 +35,7 @@ build:php:
   stage: build
   image: composer:2.2
   script:
-    - composer install --no-dev -o -a --ignore-platform-reqs $composer_options
+    - composer install --no-dev -o -a $composer_options
   artifacts:
     paths:
       - bin
