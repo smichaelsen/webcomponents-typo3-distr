@@ -75,7 +75,8 @@ build:php:
 # rsyncs the artifacts to the target server via deployer
 .deploy: &deploy
   <<: *prepare-ssh
-  image: composer:2.2
+  # deployer does not work with composer2.2 for the time being
+  image: composer:2.0.8
   variables:
     # no git needed, only the artifacts are required
     GIT_STRATEGY: none
