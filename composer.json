@@ -6,7 +6,9 @@
 			"php": "7.4.12"
 		},
 		"allow-plugins": {
-			"helhum/dotenv-connector": true
+			"helhum/dotenv-connector": true,
+			"typo3/class-alias-loader": true,
+			"typo3/cms-composer-installers": true
 		}
 	},
 	"prefer-stable": true,
