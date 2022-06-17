@@ -28,6 +28,19 @@
 			<trans-unit id="password" resname="password">
 				<source>Password</source>
 			</trans-unit>
+			<trans-unit id="widgets.t3demoGitlab.title" resname="widgets.t3demoGitlab.title">
+				<source>Find the demo project on GitLab</source>
+			</trans-unit>
+			<trans-unit id="widgets.t3demoGitlab.description" resname="widgets.t3demoGitlab.description">
+				<source>Shows the reference to the GitLab Repository of the Demo-Project</source>
+			</trans-unit>
+			<trans-unit id="widgets.t3demoGitlab.text" resname="widgets.t3demoGitlab.text">
+				<source>The demo project is publicly available on GitLab.
+					You can even set it up on your local machine and see how everything works!</source>
+			</trans-unit>
+			<trans-unit id="widgets.t3demoGitlab.cta" resname="widgets.t3demoGitlab.cta">
+				<source>Go to GitLab</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>
