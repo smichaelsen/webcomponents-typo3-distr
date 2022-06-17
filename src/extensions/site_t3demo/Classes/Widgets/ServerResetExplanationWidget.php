@@ -1,4 +1,7 @@
 <?php
+
+declare(strict_types=1);
+
 namespace B13\SiteT3demo\Widgets;
 
 use TYPO3\CMS\Dashboard\Widgets\WidgetConfigurationInterface;
