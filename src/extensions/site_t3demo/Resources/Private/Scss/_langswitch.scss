@@ -1,7 +1,7 @@
 .b_langswitch {
-	display: inline;
-	padding: 0 15px;
-	margin: 0;
+    display: inline;
+    padding: 0 15px;
+    margin: 0;
 
     &__label {
         display: none;
@@ -13,27 +13,27 @@
         }
     }
 
-	&__item {
-		display: inline-block;
-		line-height: $line-height-meta-menu;
-	}
+    &__item {
+        display: inline-block;
+        line-height: $line-height-meta-menu;
+    }
 
-	&__link {
-		line-height: 48px;
-		height: 48px;
-		min-width: 32px;
-		display: inline-block;
-		color: $color-gray-light;
+    &__link {
+        line-height: 48px;
+        height: 48px;
+        min-width: 32px;
+        display: inline-block;
+        color: $color-gray-light;
 
-		&--active {
-			color: $color-black;
-		}
+        &--active {
+            color: $color-black;
+        }
 
-		&:hover {
-			color: $color-primary;
-			text-decoration: none;
-		}
-	}
+        &:hover {
+            color: $color-primary;
+            text-decoration: none;
+        }
+    }
 
     &__linktitle {
         display: none;
@@ -41,9 +41,9 @@
 }
 
 @mixin langswitch-lg {
-	.b_langswitch {
+    .b_langswitch {
         $self: &;
-		padding: 0 8px 15px;
+        padding: 0 8px 15px;
         display: none;
         background: #fff;
         position: absolute;
@@ -56,14 +56,14 @@
             display: inline;
         }
 
-		&__item {
+        &__item {
             display: block;
             padding-left: 10px;
             padding-right: 10px;
             font-size: 18px;
             line-height: 27px;
             text-align: center;
-		}
+        }
 
         &--link {
             color: $color-black;
@@ -114,5 +114,5 @@
                 content: "]";
             }
         }
-	}
+    }
 }
