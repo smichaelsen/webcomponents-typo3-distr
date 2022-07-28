@@ -19,6 +19,7 @@
 		display: inline-block;
 		height: 48px;
 		width: 48px;
+
 		&:hover {
 			text-decoration: none;
 		}
@@ -27,6 +28,7 @@
 		height: 32px;
 		width: 32px;
 		fill: $color-black;
+
 		#{$self}__logolink:hover & {
 			fill: $color-primary;
 		}
@@ -45,6 +47,7 @@
 		.b_navi--open & {
 			position: initial;
 		}
+
 		&__meta {
 			position: fixed;
 			height: 68px;
@@ -54,11 +57,13 @@
 			right: 0;
 			bottom: 0;
 			background: $color-white;
+
 			#navtrigger:checked ~ & {
 				display: flex;
 				justify-content: space-between;
 			}
 		}
+
 		&__login {
 			margin-inline-end: 15px;
 			line-height: $line-height-meta-menu;
@@ -69,25 +74,34 @@
 @mixin header-lg {
 	.b_header {
 		height: 80px;
+
 		&__contentcontainer {
 			display: flex;
 		}
+
 		&__logolink {
 			text-align: start;
 			margin-top: 20px;
 		}
+
 		&__logo {
 			height: 40px;
 			width: 40px;
 		}
+
 		&__meta {
 			display: block;
 			white-space: nowrap;
 			margin-top: 16px;
 			margin-inline-start: $content-spacing-s;
+
+            &--contentcontainer {
+                margin-top: 24px;
+            }
 		}
+
 		&__login {
-			display: inline;
+            display: inline-block;
 		}
 	}
 }
