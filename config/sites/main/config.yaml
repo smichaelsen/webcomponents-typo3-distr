@@ -52,7 +52,7 @@ languages:
     fallbackType: strict
     fallbacks: ''
   -
-    title: Hebrew
+    title: 'עִברִית'
     enabled: true
     base: /he/
     typo3Language: he
