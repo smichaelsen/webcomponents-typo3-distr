@@ -1,3 +1,5 @@
+import './my-keyvisual';
+
 import ResetBanner from './ResetBanner';
 import Navigation from './Navigation';
 
