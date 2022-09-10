@@ -12,6 +12,7 @@
 @import 'EXT:site_t3demo/Configuration/TypoScript/Setup/plugin.tx_felogin.typoscript'
 @import 'EXT:site_t3demo/Configuration/TypoScript/Setup/plugin.tx_form.typoscript'
 @import 'EXT:site_t3demo/Configuration/TypoScript/Setup/tt_content.faqlist.typoscript'
+@import 'EXT:site_t3demo/Configuration/TypoScript/Setup/tt_content.keyvisual.typoscript'
 
 
 page = PAGE

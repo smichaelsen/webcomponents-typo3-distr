@@ -13,6 +13,10 @@ services:
         command: 'typo3demo:checkSync'
         schedulable: true
 
+  B13\SiteT3demo\DataProvider\:
+    resource: '../Classes/DataProvider/*'
+    public: true
+
   B13\SiteT3demo\Backend\ToolbarItems\TimerToolbarItem:
     public: true
 
