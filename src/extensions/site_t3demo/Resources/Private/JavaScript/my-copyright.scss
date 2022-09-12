@@ -1,0 +1,29 @@
+@import "../Scss/variables";
+@import "../Scss/base";
+@import "../Scss/fonts";
+
+.b_copyright {
+    color: $color-white;
+    font-size: 12px;
+    margin: $content-spacing-s 0;
+    text-align: center;
+    &__link {
+        color: $color-white;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .b_copyright {
+        margin: $content-spacing-m 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .b_copyright {
+        margin-inline-start: 100px;
+        text-align: start;
+    }
+}
