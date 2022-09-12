@@ -1,3 +1,4 @@
+import './my-copyright';
 import './my-keyvisual';
 
 import ResetBanner from './ResetBanner';

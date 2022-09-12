@@ -38,14 +38,7 @@
 				</f:for>
 			</ul>
 
-			<p class="b_copyright">
-				<span dir="ltr">
-					&copy; {f:format.date(format: 'Y', date: 'NOW')}
-					<a href="https://typo3.org" class="b_copyright__link" target="_blank" rel="noreferrer">TYPO3 Association.</a>
-					<a href="https://b13.com" class="b_copyright__link" target="_blank" rel="noreferrer">Made with ❤ by b13.</a>
-				</span>
-			</p>
-
+            {copyright -> f:format.raw()}
 		</div>
 	</div>
 </footer>

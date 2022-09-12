@@ -41,6 +41,11 @@ lib.fluidPage {
     }
   }
 
+  variables {
+    copyright = WEBCOMPONENT
+    copyright.tagName = my-copyright
+  }
+
 }
 
 [frontend.user.isLoggedIn]
